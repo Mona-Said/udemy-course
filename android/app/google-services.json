@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1094664005169",
+    "project_id": "udemy-course-ce7b6",
+    "storage_bucket": "udemy-course-ce7b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094664005169:android:752c2243a3bb4791c25710",
+        "android_client_info": {
+          "package_name": "com.example.src"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGM0uIAJ5hFx6goq-etxVkhMPfJFwwIn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
