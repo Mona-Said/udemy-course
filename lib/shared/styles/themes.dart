@@ -12,15 +12,11 @@ ThemeData lightTheme = ThemeData(
       fontSize: 25.0,
       fontWeight: FontWeight.bold,
     ),
-    iconTheme: IconThemeData(
-        color: Colors.black,
-        size: 28.0
-    ),
+    iconTheme: IconThemeData(color: Colors.black, size: 28.0),
     systemOverlayStyle: SystemUiOverlayStyle(
       statusBarColor: Colors.white,
       statusBarIconBrightness: Brightness.dark,
     ),
-
   ),
   scaffoldBackgroundColor: Colors.white,
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
@@ -37,11 +33,10 @@ ThemeData lightTheme = ThemeData(
     ),
   ),
   fontFamily: 'Jannah',
-  primarySwatch: Colors.blueGrey,
-
+  primarySwatch: Colors.blue,
 );
 ThemeData darkTheme = ThemeData(
-  appBarTheme:  AppBarTheme(
+  appBarTheme: AppBarTheme(
     titleSpacing: 20.0,
     backgroundColor: HexColor('333739'),
     elevation: 0.0,
@@ -50,17 +45,14 @@ ThemeData darkTheme = ThemeData(
       fontSize: 25.0,
       fontWeight: FontWeight.bold,
     ),
-    iconTheme: const IconThemeData(
-        color: Colors.white,
-        size: 28.0
-    ),
+    iconTheme: const IconThemeData(color: Colors.white, size: 28.0),
     systemOverlayStyle: SystemUiOverlayStyle(
       statusBarColor: HexColor('333739'),
       statusBarIconBrightness: Brightness.light,
     ),
   ),
   scaffoldBackgroundColor: HexColor('333739'),
-  bottomNavigationBarTheme:  BottomNavigationBarThemeData(
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
     type: BottomNavigationBarType.fixed,
     selectedItemColor: Colors.deepOrange,
     unselectedItemColor: Colors.grey,

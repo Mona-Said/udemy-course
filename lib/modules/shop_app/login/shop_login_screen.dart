@@ -7,7 +7,6 @@ import 'package:src/modules/shop_app/register/shop_register_screen.dart';
 import 'package:src/shared/components/components.dart';
 import 'package:src/shared/components/constants.dart';
 import 'package:src/shared/network/local/cache_helper.dart';
-
 import 'cubit/cubit.dart';
 
 class ShopLoginScreen extends StatelessWidget {

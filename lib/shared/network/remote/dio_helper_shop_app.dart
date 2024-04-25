@@ -1,48 +1,43 @@
 import 'package:dio/dio.dart';
-class ShopDioHelper
-{
+
+class ShopDioHelper {
   static Dio? dio;
-  static shopInit()
-  {
+
+  static shopInit() {
     dio = Dio(
       BaseOptions(
         baseUrl: 'https://student.valuxapps.com/api/',
         receiveDataWhenStatusError: true,
       ),
     );
-
   }
 
   static Future<Response> shopGetData({
     required String url,
-    Map<String,dynamic>? query,
-    String? lang= 'en',
+    Map<String, dynamic>? query,
+    String? lang = 'en',
     String? token,
-  }) async
-  {
-    dio?.options.headers=
-    {
-      'Content-Type':'application/json',
+  }) async {
+    dio?.options.headers = {
+      'Content-Type': 'application/json',
       'lang': lang,
-      'Authorization': token??'',
+      'Authorization': token ?? '',
     };
-    return await dio!.get(url, queryParameters:query );
+
+    return await dio!.get(url, queryParameters: query);
   }
 
   static Future<Response> shopPostData({
     required String url,
-    Map<String,dynamic>? query,
-    required Map<String,dynamic> data,
-    String? lang= 'en',
+    Map<String, dynamic>? query,
+    required Map<String, dynamic> data,
+    String? lang = 'en',
     String? token,
-}) async
-  {
-    dio?.options.headers=
-    {
-      'Content-Type':'application/json',
+  }) async {
+    dio?.options.headers = {
+      'Content-Type': 'application/json',
       'lang': lang,
-      'Authorization' : token??'',
-
+      'Authorization': token ?? '',
     };
     return dio!.post(
       url,
@@ -53,18 +48,15 @@ class ShopDioHelper
 
   static Future<Response> shopPutData({
     required String url,
-    Map<String,dynamic>? query,
-    required Map<String,dynamic> data,
-    String? lang= 'en',
+    Map<String, dynamic>? query,
+    required Map<String, dynamic> data,
+    String? lang = 'en',
     String? token,
-  }) async
-  {
-    dio?.options.headers=
-    {
-      'Content-Type':'application/json',
+  }) async {
+    dio?.options.headers = {
+      'Content-Type': 'application/json',
       'lang': lang,
-      'Authorization' : token??'',
-
+      'Authorization': token ?? '',
     };
     return dio!.put(
       url,
@@ -72,5 +64,4 @@ class ShopDioHelper
       data: data,
     );
   }
-
 }

@@ -47,6 +47,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   fluttertoast: ^8.2.0
   carousel_slider: ^4.2.1
+  flutter_iconly: ^1.0.2
 
   # firebase
   firebase_core: ^2.24.2
@@ -81,6 +82,9 @@ flutter:
     - family: Jannah
       fonts:
         - asset: assets/fonts/jannah.ttf
+    - family: IconBroken
+      fonts:
+        - asset: assets/fonts/icons.ttf
 
   # To add assets to your application, add an assets section, like this:
 
