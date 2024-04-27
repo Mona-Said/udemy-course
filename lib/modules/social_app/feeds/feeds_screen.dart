@@ -1,57 +1,66 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+
+import '../../../layout/social_app/cubit/cubit.dart';
+import '../../../layout/social_app/cubit/states.dart';
 
 class FeedsScreen extends StatelessWidget {
   const FeedsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      physics: const BouncingScrollPhysics(),
-      child: Column(
-        children: [
-          Container(
-            width: double.infinity,
-            child: const Card(
-              clipBehavior: Clip.antiAliasWithSaveLayer,
-              margin: EdgeInsets.all(8.0),
-              elevation: 5.0,
-              child: Stack(
-                alignment: AlignmentDirectional.bottomEnd,
-                children: [
-                  Image(
-                    image: NetworkImage(
-                      'https://img.freepik.com/free-photo/stylish-good-looking-ambitious-smiling-brunette-woman-with-curly-hairstyle-cross-hands-chest-confident-professional-pose-smiling-standing-casually-summer-outfit-talking-friend-white-wall_176420-36248.jpg?t=st=1713987803~exp=1713991403~hmac=795a7eafbfcecf5c2e2246c4c440216c08dcb1a80fb3d49e17e32c5d93b520b2&w=740',
-                    ),
-                    fit: BoxFit.cover,
-                    height: 200.0,
-                    width: double.infinity,
+    return BlocConsumer<SocialLayoutCubit, SocialLayoutStates>(
+      listener: (context, state) {},
+      builder: (context, state) {
+        return SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: Column(
+            children: [
+              Container(
+                width: double.infinity,
+                child: const Card(
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  margin: EdgeInsets.all(8.0),
+                  elevation: 5.0,
+                  child: Stack(
+                    alignment: AlignmentDirectional.bottomEnd,
+                    children: [
+                      Image(
+                        image: NetworkImage(
+                          'https://img.freepik.com/free-photo/stylish-good-looking-ambitious-smiling-brunette-woman-with-curly-hairstyle-cross-hands-chest-confident-professional-pose-smiling-standing-casually-summer-outfit-talking-friend-white-wall_176420-36248.jpg?t=st=1713987803~exp=1713991403~hmac=795a7eafbfcecf5c2e2246c4c440216c08dcb1a80fb3d49e17e32c5d93b520b2&w=740',
+                        ),
+                        fit: BoxFit.cover,
+                        height: 200.0,
+                        width: double.infinity,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: 10.0),
+                        child: Text(
+                          'Communicate with friends',
+                          style: TextStyle(color: Colors.blue, fontSize: 14.0),
+                        ),
+                      ),
+                    ],
                   ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10.0),
-                    child: Text(
-                      'Communicate with friends',
-                      style: TextStyle(color: Colors.blue, fontSize: 14.0),
-                    ),
-                  ),
-                ],
+                ),
               ),
-            ),
+              ListView.separated(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemBuilder: (context, index) => buildPostItem(context),
+                separatorBuilder: (context, index) => const SizedBox(
+                  height: 5.0,
+                ),
+                itemCount: 10,
+              ),
+              const SizedBox(
+                height: 10.0,
+              ),
+            ],
           ),
-          ListView.separated(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) => buildPostItem(context),
-            separatorBuilder: (context, index) => const SizedBox(
-              height: 5.0,
-            ),
-            itemCount: 10,
-          ),
-          const SizedBox(
-            height: 10.0,
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 
