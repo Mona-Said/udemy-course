@@ -1,5 +1,7 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:src/modules/news_app/web_view/webview_screen.dart';
 import 'package:src/shared/cubit/cubit.dart';
@@ -38,6 +40,7 @@ Widget textButton({
   required VoidCallback function,
   Color? color,
   double? fontSize,
+  FontWeight? fontWeight,
 }) =>
     TextButton(
       onPressed: function,
@@ -46,6 +49,7 @@ Widget textButton({
         style: TextStyle(
           color: color,
           fontSize: fontSize,
+          fontWeight: fontWeight,
         ),
       ),
     );
@@ -64,35 +68,65 @@ Widget formField({
   bool isClickable = true,
   bool isPassword = false,
 }) =>
-    TextFormField(
-      controller: controller,
-      decoration: InputDecoration(
-        border: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(40.0),
+    Container(
+      width: double.infinity,
+      height: 60.0,
+      child: TextFormField(
+        controller: controller,
+        decoration: InputDecoration(
+          border: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(40.0),
+            ),
           ),
+          labelText: label,
+          prefixIcon: Icon(
+            prefix,
+          ),
+          suffixIcon: suffix != null
+              ? IconButton(
+                  onPressed: pressed,
+                  icon: Icon(
+                    suffix,
+                  ),
+                )
+              : null,
         ),
-        labelText: label,
-        prefixIcon: Icon(
-          prefix,
-        ),
-        suffixIcon: suffix != null
-            ? IconButton(
-                onPressed: pressed,
-                icon: Icon(
-                  suffix,
-                ),
-              )
-            : null,
+        keyboardType: type,
+        obscureText: isPassword,
+        validator: function,
+        onTap: onTap,
+        enabled: isClickable,
+        onFieldSubmitted: submit,
+        onChanged: onChanged,
       ),
-      keyboardType: type,
-      obscureText: isPassword,
-      validator: function,
-      onTap: onTap,
-      enabled: isClickable,
-      onFieldSubmitted: submit,
-      onChanged: onChanged,
     );
+
+PreferredSize defaultAppBar({
+  required BuildContext context,
+  String? label,
+  List<Widget>? actions,
+}) {
+  return PreferredSize(
+    preferredSize: const Size.fromHeight(kToolbarHeight),
+    child: AppBar(
+      leading: IconButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        icon: const Icon(
+          IconlyBroken.arrowLeft2,
+        ),
+      ),
+      title: Text(
+        label ?? '',
+        style: const TextStyle(fontSize: 23.0),
+      ),
+      actions: actions,
+      titleSpacing: 0.0,
+    ),
+  );
+}
 
 Widget databaseList(Map map, context) => Dismissible(
       key: Key(map['id'].toString()),

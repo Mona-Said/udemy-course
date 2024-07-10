@@ -16,8 +16,7 @@ import 'layout/news_app/cubit/cubit.dart';
 import 'layout/news_app/cubit/cubit2.dart';
 import 'modules/social_app/social_login/social_login_screen.dart';
 
-void main() async
-{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(
@@ -28,11 +27,11 @@ void main() async
   DioHelper.init();
   ShopDioHelper.shopInit();
   await CacheHelper.init();
-  bool? isDark = CacheHelper.getData(key:'isDark');
+  bool? isDark = CacheHelper.getData(key: 'isDark');
   Widget widget;
   //bool? onBoarding = CacheHelper.getData(key:'onBoarding');
   //token = CacheHelper.getData(key:'token');
-  uId = CacheHelper.getData(key:'uId');
+  uId = CacheHelper.getData(key: 'uId');
   //print(token);
 
   // if(onBoarding!=null)
@@ -47,59 +46,66 @@ void main() async
   //   widget = const OnboardingScreen();
   // }
 
-  if(uId != null)
-  {
+  if (uId != null) {
     widget = const SocialLayoutScreen();
-  } else{
-    widget =  SocialLoginScreen();
-
+  } else {
+    widget = SocialLoginScreen();
   }
 
-
-   runApp(MyApp(
-     isDark: isDark,
-     startWidget:widget ,
-   ));
+  runApp(MyApp(
+    isDark: isDark,
+    startWidget: widget,
+  ));
 }
-class MyApp extends StatelessWidget
-{
+
+class MyApp extends StatelessWidget {
   final bool? isDark;
   final Widget? startWidget;
 
-   const MyApp({super.key, this.isDark, this.startWidget,});
+  const MyApp({
+    super.key,
+    this.isDark,
+    this.startWidget,
+  });
 
   @override
-  Widget build(BuildContext context)
-  {
-    return  MultiBlocProvider(
-      providers:
-      [
-        BlocProvider(create: (BuildContext context) => NewsCubit()..getBusiness(),),
-        BlocProvider(create: (BuildContext context) => DarkCubit()..changeAppMode(
-            fromShared: isDark
-        ),),
-        BlocProvider(create: (BuildContext context)=>ShopCubit()..getHomeData()..getCategoriesData()..getFavoritesData()..getUserData(),),
-        BlocProvider(create: (BuildContext context)=>SocialLayoutCubit()..getUserData(),),
+  Widget build(BuildContext context) {
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (BuildContext context) => NewsCubit()..getBusiness(),
+        ),
+        BlocProvider(
+          create: (BuildContext context) =>
+              DarkCubit()..changeAppMode(fromShared: isDark),
+        ),
+        BlocProvider(
+          create: (BuildContext context) => ShopCubit()
+            ..getHomeData()
+            ..getCategoriesData()
+            ..getFavoritesData()
+            ..getUserData(),
+        ),
+        BlocProvider(
+          create: (BuildContext context) => SocialLayoutCubit()..getUserData(),
+        ),
       ],
-      child: BlocConsumer<DarkCubit,DarkStates>(
-        listener: ( context, state) {},
-        builder: ( context, state)
-        {
+      child: BlocConsumer<DarkCubit, DarkStates>(
+        listener: (context, state) {},
+        builder: (context, state) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: lightTheme,
-            darkTheme: darkTheme ,
-            themeMode: DarkCubit.get(context).isDark? ThemeMode.dark : ThemeMode.light,
+            darkTheme: darkTheme,
+            themeMode: DarkCubit.get(context).isDark
+                ? ThemeMode.dark
+                : ThemeMode.light,
             home: startWidget,
-
           );
         },
-
       ),
     );
-
   }
-
 }
 
 //onBoarding != null && onBoarding! ? ShopLoginScreen() : OnboardingScreen()

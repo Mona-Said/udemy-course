@@ -9,6 +9,7 @@ import 'package:src/modules/social_app/settings/settings_screen.dart';
 import 'package:src/modules/social_app/users/users_screen.dart';
 import 'package:src/shared/components/constants.dart';
 import '../../../models/social_app_model/create_user_model.dart';
+import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   SocialLayoutCubit() : super(SocialLayoutInitialState());

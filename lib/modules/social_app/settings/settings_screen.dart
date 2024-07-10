@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:src/modules/social_app/edit/edit_screen.dart';
+import 'package:src/shared/components/components.dart';
 
 import '../../../layout/social_app/cubit/cubit.dart';
 import '../../../layout/social_app/cubit/states.dart';
@@ -190,7 +192,9 @@ class SettingsScreen extends StatelessWidget {
                     width: 10.0,
                   ),
                   OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      navigateTo(context, EditScreen());
+                    },
                     style: ButtonStyle(
                         side: MaterialStateProperty.all(
                             const BorderSide(color: Colors.grey, width: 0.5)),
