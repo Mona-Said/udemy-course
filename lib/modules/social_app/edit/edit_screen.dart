@@ -18,6 +18,12 @@ class EditScreen extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         var cubit = SocialLayoutCubit.get(context).model;
+        var profileImage = SocialLayoutCubit.get(context).profileImage;
+        var coverImage = SocialLayoutCubit.get(context).coverImage;
+
+        nameController.text = cubit!.name!;
+        phoneController.text = cubit.phone!;
+        bioController.text = cubit.bio!;
         return Scaffold(
           appBar: defaultAppBar(
             context: context,
@@ -59,12 +65,18 @@ class EditScreen extends StatelessWidget {
                                       topRight: Radius.circular(8.0),
                                     ),
                                     image: DecorationImage(
-                                        image: NetworkImage('${cubit?.cover}'),
+                                        image: coverImage == null
+                                            ? NetworkImage('${cubit.cover}')
+                                            : FileImage(coverImage)
+                                                as ImageProvider,
                                         fit: BoxFit.cover),
                                   ),
                                 ),
                                 IconButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    SocialLayoutCubit.get(context)
+                                        .getCoverImage();
+                                  },
                                   icon: const CircleAvatar(
                                     radius: 18.0,
                                     backgroundColor: Colors.white,
@@ -86,12 +98,17 @@ class EditScreen extends StatelessWidget {
                                     Theme.of(context).scaffoldBackgroundColor,
                                 child: CircleAvatar(
                                   radius: 60.0,
-                                  backgroundImage:
-                                      NetworkImage('${cubit?.image}'),
+                                  backgroundImage: profileImage == null
+                                      ? NetworkImage('${cubit.image}')
+                                      : FileImage(profileImage)
+                                          as ImageProvider,
                                 ),
                               ),
                               IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  SocialLayoutCubit.get(context)
+                                      .getProfileImage();
+                                },
                                 icon: const CircleAvatar(
                                   radius: 18.0,
                                   backgroundColor: Colors.white,

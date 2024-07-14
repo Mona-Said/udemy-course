@@ -93,6 +93,7 @@ Widget formField({
               : null,
         ),
         keyboardType: type,
+        style: const TextStyle(fontSize: 15.0),
         obscureText: isPassword,
         validator: function,
         onTap: onTap,

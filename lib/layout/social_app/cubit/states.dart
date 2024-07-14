@@ -11,3 +11,11 @@ class SocialLayoutCreateUserErrorState extends SocialLayoutStates {}
 class SocialChangeBottomNavState extends SocialLayoutStates {}
 
 class SocialAddPostState extends SocialLayoutStates {}
+
+class SocialGetProfileImageSuccessState extends SocialLayoutStates {}
+
+class SocialGetProfileImageErrorState extends SocialLayoutStates {}
+
+class SocialGetCoverImageSuccessState extends SocialLayoutStates {}
+
+class SocialGetCoverImageErrorState extends SocialLayoutStates {}
