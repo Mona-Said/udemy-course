@@ -84,4 +84,40 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       emit(SocialGetCoverImageErrorState());
     }
   }
+
+  void uploadProfileImage() {
+    firebase_storage.FirebaseStorage.instance
+        .ref()
+        .child('users/${Uri.file(profileImage!.path).pathSegments.last}')
+        .putFile(profileImage!)
+        .then((value) {
+      value.ref.getDownloadURL().then((value) {
+        emit(SocialUploadProfileImageSuccessState());
+      }).catchError((error) {
+        print(error.toString());
+        emit(SocialUploadProfileImageErrorState());
+      });
+    }).catchError((error) {
+      print(error.toString());
+      emit(SocialUploadProfileImageErrorState());
+    });
+  }
+
+  void uploadCoverImage() {
+    firebase_storage.FirebaseStorage.instance
+        .ref()
+        .child('users/${Uri.file(coverImage!.path).pathSegments.last}')
+        .putFile(coverImage!)
+        .then((value) {
+      value.ref.getDownloadURL().then((value) {
+        emit(SocialUploadCoverImageSuccessState());
+      }).catchError((error) {
+        print(error.toString());
+        emit(SocialUploadCoverImageErrorState());
+      });
+    }).catchError((error) {
+      print(error.toString());
+      emit(SocialUploadCoverImageErrorState());
+    });
+  }
 }

@@ -34,7 +34,9 @@ class EditScreen extends StatelessWidget {
                 color: Colors.blue,
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
-                function: () {},
+                function: () {
+                  SocialLayoutCubit.get(context).uploadCoverImage();
+                },
               ),
               const SizedBox(
                 width: 10.0,
