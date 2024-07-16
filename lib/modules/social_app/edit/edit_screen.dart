@@ -17,7 +17,7 @@ class EditScreen extends StatelessWidget {
     return BlocConsumer<SocialLayoutCubit, SocialLayoutStates>(
       listener: (context, state) {},
       builder: (context, state) {
-        var cubit = SocialLayoutCubit.get(context).model;
+        var cubit = SocialLayoutCubit.get(context).userModel;
         var profileImage = SocialLayoutCubit.get(context).profileImage;
         var coverImage = SocialLayoutCubit.get(context).coverImage;
 

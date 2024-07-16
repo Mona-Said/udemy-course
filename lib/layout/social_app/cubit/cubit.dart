@@ -19,13 +19,14 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
 
   static SocialLayoutCubit get(context) => BlocProvider.of(context);
 
-  CreateUserModel? model;
+  CreateUserModel? userModel;
 
   void getUserData() {
     emit(SocialLayoutCreateUserLoadingState());
     FirebaseFirestore.instance.collection('users').doc(uId).get().then((value) {
       print(value.data());
-      model = CreateUserModel.fromJson(value.data() as Map<String, dynamic>);
+      userModel =
+          CreateUserModel.fromJson(value.data() as Map<String, dynamic>);
       emit(SocialLayoutCreateUserSuccessState());
     }).catchError((error) {
       print(error.toString());
@@ -118,6 +119,33 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     }).catchError((error) {
       print(error.toString());
       emit(SocialUploadCoverImageErrorState());
+    });
+  }
+
+  void updateUserData({
+    required String name,
+    required String phone,
+    required String bio,
+  }) {
+    CreateUserModel model = CreateUserModel(
+      name: name,
+      phone: phone,
+      bio: bio,
+      image: userModel?.image,
+      cover: userModel?.cover,
+      uId: userModel?.uId,
+      email: userModel?.email,
+      isEmailVerified: false,
+    );
+
+    FirebaseFirestore.instance
+        .collection('users')
+        .doc(userModel?.uId)
+        .update(model.toMap())
+        .then((value) {
+      getUserData();
+    }).catchError((error) {
+      emit(SocialUpdateUserDataErrorState());
     });
   }
 }
