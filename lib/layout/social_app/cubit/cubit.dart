@@ -86,14 +86,25 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     }
   }
 
-  void uploadProfileImage() {
+  void uploadProfileImage({
+    required String name,
+    required String phone,
+    required String bio,
+  }) {
+    emit(SocialUpdateUserDataLoadingState());
+
     firebase_storage.FirebaseStorage.instance
         .ref()
         .child('users/${Uri.file(profileImage!.path).pathSegments.last}')
         .putFile(profileImage!)
         .then((value) {
       value.ref.getDownloadURL().then((value) {
-        emit(SocialUploadProfileImageSuccessState());
+        updateUserData(
+          name: name,
+          phone: phone,
+          bio: bio,
+          image: value,
+        );
       }).catchError((error) {
         print(error.toString());
         emit(SocialUploadProfileImageErrorState());
@@ -104,14 +115,24 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     });
   }
 
-  void uploadCoverImage() {
+  void uploadCoverImage({
+    required String name,
+    required String phone,
+    required String bio,
+  }) {
+    emit(SocialUpdateUserDataLoadingState());
     firebase_storage.FirebaseStorage.instance
         .ref()
         .child('users/${Uri.file(coverImage!.path).pathSegments.last}')
         .putFile(coverImage!)
         .then((value) {
       value.ref.getDownloadURL().then((value) {
-        emit(SocialUploadCoverImageSuccessState());
+        updateUserData(
+          name: name,
+          phone: phone,
+          bio: bio,
+          cover: value,
+        );
       }).catchError((error) {
         print(error.toString());
         emit(SocialUploadCoverImageErrorState());
@@ -126,13 +147,15 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     required String name,
     required String phone,
     required String bio,
+    String? image,
+    String? cover,
   }) {
     CreateUserModel model = CreateUserModel(
       name: name,
       phone: phone,
       bio: bio,
-      image: userModel?.image,
-      cover: userModel?.cover,
+      image: image ?? userModel?.image,
+      cover: cover ?? userModel?.cover,
       uId: userModel?.uId,
       email: userModel?.email,
       isEmailVerified: false,

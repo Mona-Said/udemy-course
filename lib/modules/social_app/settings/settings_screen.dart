@@ -69,7 +69,7 @@ class SettingsScreen extends StatelessWidget {
                 '${cubit?.bio}',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: Colors.grey,
-                      fontSize: 11.0,
+                      fontSize: 13.0,
                     ),
               ),
               Padding(

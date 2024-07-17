@@ -20,11 +20,9 @@ class SocialGetCoverImageSuccessState extends SocialLayoutStates {}
 
 class SocialGetCoverImageErrorState extends SocialLayoutStates {}
 
-class SocialUploadProfileImageSuccessState extends SocialLayoutStates {}
+class SocialUpdateUserDataLoadingState extends SocialLayoutStates {}
 
 class SocialUploadProfileImageErrorState extends SocialLayoutStates {}
-
-class SocialUploadCoverImageSuccessState extends SocialLayoutStates {}
 
 class SocialUploadCoverImageErrorState extends SocialLayoutStates {}
 

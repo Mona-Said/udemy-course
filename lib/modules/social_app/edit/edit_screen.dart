@@ -35,7 +35,11 @@ class EditScreen extends StatelessWidget {
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
                 function: () {
-                  SocialLayoutCubit.get(context).uploadCoverImage();
+                  SocialLayoutCubit.get(context).updateUserData(
+                    name: nameController.text,
+                    phone: phoneController.text,
+                    bio: bioController.text,
+                  );
                 },
               ),
               const SizedBox(
@@ -48,6 +52,14 @@ class EditScreen extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  if (state is SocialUpdateUserDataLoadingState)
+                    const LinearProgressIndicator(
+                      color: Colors.blue,
+                    ),
+                  if (state is SocialUpdateUserDataLoadingState)
+                    const SizedBox(
+                      height: 10.0,
+                    ),
                   Container(
                     height: 190.0,
                     color: Theme.of(context).scaffoldBackgroundColor,
@@ -124,6 +136,66 @@ class EditScreen extends StatelessWidget {
                           ),
                         ]),
                   ),
+                  const SizedBox(
+                    height: 10.0,
+                  ),
+                  if (SocialLayoutCubit.get(context).profileImage != null ||
+                      SocialLayoutCubit.get(context).coverImage != null)
+                    Row(
+                      children: [
+                        if (SocialLayoutCubit.get(context).profileImage != null)
+                          Expanded(
+                            child: Column(children: [
+                              defaultButton(
+                                text: 'UPLOAD PROFILE',
+                                function: () {
+                                  SocialLayoutCubit.get(context)
+                                      .uploadProfileImage(
+                                    name: nameController.text,
+                                    phone: phoneController.text,
+                                    bio: bioController.text,
+                                  );
+                                },
+                              ),
+                              if (state is SocialUpdateUserDataLoadingState)
+                                const SizedBox(
+                                  height: 5.0,
+                                ),
+                              if (state is SocialUpdateUserDataLoadingState)
+                                const LinearProgressIndicator(
+                                  color: Colors.blue,
+                                ),
+                            ]),
+                          ),
+                        const SizedBox(
+                          width: 10.0,
+                        ),
+                        if (SocialLayoutCubit.get(context).coverImage != null)
+                          Expanded(
+                            child: Column(children: [
+                              defaultButton(
+                                text: 'UPLOAD COVER',
+                                function: () {
+                                  SocialLayoutCubit.get(context)
+                                      .uploadCoverImage(
+                                    name: nameController.text,
+                                    phone: phoneController.text,
+                                    bio: bioController.text,
+                                  );
+                                },
+                              ),
+                              if (state is SocialUpdateUserDataLoadingState)
+                                const SizedBox(
+                                  height: 5.0,
+                                ),
+                              if (state is SocialUpdateUserDataLoadingState)
+                                const LinearProgressIndicator(
+                                  color: Colors.blue,
+                                ),
+                            ]),
+                          ),
+                      ],
+                    ),
                   const SizedBox(
                     height: 20.0,
                   ),
