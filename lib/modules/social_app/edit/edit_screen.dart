@@ -196,9 +196,11 @@ class EditScreen extends StatelessWidget {
                           ),
                       ],
                     ),
-                  const SizedBox(
-                    height: 20.0,
-                  ),
+                  if (SocialLayoutCubit.get(context).profileImage != null ||
+                      SocialLayoutCubit.get(context).coverImage != null)
+                    const SizedBox(
+                      height: 20.0,
+                    ),
                   formField(
                     controller: nameController,
                     label: 'Name',
