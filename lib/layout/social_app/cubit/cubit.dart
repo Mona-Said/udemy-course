@@ -11,6 +11,7 @@ import 'package:src/modules/social_app/posts/addpost_screen.dart';
 import 'package:src/modules/social_app/settings/settings_screen.dart';
 import 'package:src/modules/social_app/users/users_screen.dart';
 import 'package:src/shared/components/constants.dart';
+import '../../../models/social_app_model/create_post_model.dart';
 import '../../../models/social_app_model/create_user_model.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
@@ -38,7 +39,7 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   List<Widget> screens = [
     const FeedsScreen(),
     const ChatsScreen(),
-    const AddPostScreen(),
+    AddPostScreen(),
     const UsersScreen(),
     const SettingsScreen(),
   ];
@@ -169,6 +170,75 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       getUserData();
     }).catchError((error) {
       emit(SocialUpdateUserDataErrorState());
+    });
+  }
+
+  File? postImage;
+
+  Future<void> getPostImage() async {
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+    if (pickedFile != null) {
+      postImage = File(pickedFile.path);
+      emit(SocialGetPostImageSuccessState());
+    } else {
+      print('no image picked');
+      emit(SocialGetPostImageErrorState());
+    }
+  }
+
+  void deletePostImage() {
+    postImage = null;
+    emit(SocialDeletePostImageState());
+  }
+
+  void uploadPostImage({
+    required String dateTime,
+    required String text,
+  }) {
+    emit(SocialCreatePostLoadingState());
+    firebase_storage.FirebaseStorage.instance
+        .ref()
+        .child('posts/${Uri.file(postImage!.path).pathSegments.last}')
+        .putFile(postImage!)
+        .then((value) {
+      value.ref.getDownloadURL().then((value) {
+        createNewPost(
+          dateTime: dateTime,
+          text: text,
+          postImage: value,
+        );
+      }).catchError((error) {
+        print(error.toString());
+        emit(SocialCreatePostErrorState());
+      });
+    }).catchError((error) {
+      print(error.toString());
+      emit(SocialCreatePostErrorState());
+    });
+  }
+
+  void createNewPost({
+    required String dateTime,
+    required String text,
+    String? postImage,
+  }) {
+    emit(SocialCreatePostLoadingState());
+
+    CreatePostModel model = CreatePostModel(
+      name: userModel?.name,
+      uId: userModel?.uId,
+      dateTime: dateTime,
+      text: text,
+      image: userModel?.image,
+      postImage: postImage ?? '',
+    );
+    FirebaseFirestore.instance
+        .collection('posts')
+        .add(model.toMap())
+        .then((value) {
+      emit(SocialCreatePostSuccessState());
+    }).catchError((error) {
+      emit(SocialCreatePostErrorState());
     });
   }
 }

@@ -27,3 +27,16 @@ class SocialUploadProfileImageErrorState extends SocialLayoutStates {}
 class SocialUploadCoverImageErrorState extends SocialLayoutStates {}
 
 class SocialUpdateUserDataErrorState extends SocialLayoutStates {}
+
+// post
+class SocialCreatePostLoadingState extends SocialLayoutStates {}
+
+class SocialCreatePostSuccessState extends SocialLayoutStates {}
+
+class SocialCreatePostErrorState extends SocialLayoutStates {}
+
+class SocialGetPostImageSuccessState extends SocialLayoutStates {}
+
+class SocialGetPostImageErrorState extends SocialLayoutStates {}
+
+class SocialDeletePostImageState extends SocialLayoutStates {}
