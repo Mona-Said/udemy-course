@@ -227,9 +227,9 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     CreatePostModel model = CreatePostModel(
       name: userModel?.name,
       uId: userModel?.uId,
+      image: userModel?.image,
       dateTime: dateTime,
       text: text,
-      image: userModel?.image,
       postImage: postImage ?? '',
     );
     FirebaseFirestore.instance
