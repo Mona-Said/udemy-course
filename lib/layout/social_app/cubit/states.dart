@@ -2,11 +2,11 @@ abstract class SocialLayoutStates {}
 
 class SocialLayoutInitialState extends SocialLayoutStates {}
 
-class SocialLayoutCreateUserLoadingState extends SocialLayoutStates {}
+class SocialLayoutGetUserDataLoadingState extends SocialLayoutStates {}
 
-class SocialLayoutCreateUserSuccessState extends SocialLayoutStates {}
+class SocialLayoutGetUserDataSuccessState extends SocialLayoutStates {}
 
-class SocialLayoutCreateUserErrorState extends SocialLayoutStates {}
+class SocialLayoutGetUserDataErrorState extends SocialLayoutStates {}
 
 class SocialChangeBottomNavState extends SocialLayoutStates {}
 
@@ -40,3 +40,9 @@ class SocialGetPostImageSuccessState extends SocialLayoutStates {}
 class SocialGetPostImageErrorState extends SocialLayoutStates {}
 
 class SocialDeletePostImageState extends SocialLayoutStates {}
+
+class SocialLayoutGetPostsLoadingState extends SocialLayoutStates {}
+
+class SocialLayoutGetPostsSuccessState extends SocialLayoutStates {}
+
+class SocialLayoutGetPostsErrorState extends SocialLayoutStates {}

@@ -87,7 +87,9 @@ class MyApp extends StatelessWidget {
             ..getUserData(),
         ),
         BlocProvider(
-          create: (BuildContext context) => SocialLayoutCubit()..getUserData(),
+          create: (BuildContext context) => SocialLayoutCubit()
+            ..getUserData()
+            ..getPosts(),
         ),
       ],
       child: BlocConsumer<DarkCubit, DarkStates>(

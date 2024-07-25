@@ -23,15 +23,15 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   CreateUserModel? userModel;
 
   void getUserData() {
-    emit(SocialLayoutCreateUserLoadingState());
+    emit(SocialLayoutGetUserDataLoadingState());
     FirebaseFirestore.instance.collection('users').doc(uId).get().then((value) {
       print(value.data());
       userModel =
           CreateUserModel.fromJson(value.data() as Map<String, dynamic>);
-      emit(SocialLayoutCreateUserSuccessState());
+      emit(SocialLayoutGetUserDataSuccessState());
     }).catchError((error) {
       print(error.toString());
-      emit(SocialLayoutCreateUserErrorState());
+      emit(SocialLayoutGetUserDataErrorState());
     });
   }
 
@@ -224,7 +224,7 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   }) {
     emit(SocialCreatePostLoadingState());
 
-    CreatePostModel model = CreatePostModel(
+    PostModel model = PostModel(
       name: userModel?.name,
       uId: userModel?.uId,
       image: userModel?.image,
@@ -239,6 +239,19 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       emit(SocialCreatePostSuccessState());
     }).catchError((error) {
       emit(SocialCreatePostErrorState());
+    });
+  }
+
+  List<PostModel> posts = [];
+
+  void getPosts() {
+    FirebaseFirestore.instance.collection('posts').get().then((value) {
+      value.docs.forEach((element) {
+        posts.add(PostModel.fromJson(element.data()));
+        emit(SocialLayoutGetPostsSuccessState());
+      });
+    }).catchError((error) {
+      emit(SocialLayoutGetPostsErrorState());
     });
   }
 }

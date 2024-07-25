@@ -1,4 +1,4 @@
-class CreatePostModel {
+class PostModel {
   String? name;
   String? dateTime;
   String? text;
@@ -6,7 +6,7 @@ class CreatePostModel {
   String? postImage;
   String? image;
 
-  CreatePostModel({
+  PostModel({
     this.name,
     this.text,
     this.postImage,
@@ -15,7 +15,7 @@ class CreatePostModel {
     this.image,
   });
 
-  CreatePostModel.fromJson(Map<String, dynamic> json) {
+  PostModel.fromJson(Map<String, dynamic> json) {
     name = json['name'];
     text = json['text'];
     postImage = json['postImage'];
