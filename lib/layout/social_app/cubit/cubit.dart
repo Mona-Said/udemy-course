@@ -248,8 +248,8 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     FirebaseFirestore.instance.collection('posts').get().then((value) {
       value.docs.forEach((element) {
         posts.add(PostModel.fromJson(element.data()));
-        emit(SocialLayoutGetPostsSuccessState());
       });
+      emit(SocialLayoutGetPostsSuccessState());
     }).catchError((error) {
       emit(SocialLayoutGetPostsErrorState());
     });
