@@ -243,15 +243,34 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   }
 
   List<PostModel> posts = [];
+  List<String> postId = [];
+  List<int> likes = [];
 
   void getPosts() {
     FirebaseFirestore.instance.collection('posts').get().then((value) {
       value.docs.forEach((element) {
-        posts.add(PostModel.fromJson(element.data()));
+        element.reference.collection('likes').get().then((value) {
+          likes.add(value.docs.length);
+          postId.add(element.id);
+          posts.add(PostModel.fromJson(element.data()));
+        }).catchError((error) {});
       });
       emit(SocialLayoutGetPostsSuccessState());
     }).catchError((error) {
       emit(SocialLayoutGetPostsErrorState());
+    });
+  }
+
+  void likePost(String postId) {
+    FirebaseFirestore.instance
+        .collection('posts')
+        .doc(postId)
+        .collection('likes')
+        .doc(userModel?.uId)
+        .set({'like': true}).then((value) {
+      emit(SocialLayoutLikePostsSuccessState());
+    }).catchError((error) {
+      emit(SocialLayoutLikePostsErrorState());
     });
   }
 }

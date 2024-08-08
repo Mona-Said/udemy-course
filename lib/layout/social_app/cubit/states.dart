@@ -46,3 +46,7 @@ class SocialLayoutGetPostsLoadingState extends SocialLayoutStates {}
 class SocialLayoutGetPostsSuccessState extends SocialLayoutStates {}
 
 class SocialLayoutGetPostsErrorState extends SocialLayoutStates {}
+
+class SocialLayoutLikePostsSuccessState extends SocialLayoutStates {}
+
+class SocialLayoutLikePostsErrorState extends SocialLayoutStates {}
