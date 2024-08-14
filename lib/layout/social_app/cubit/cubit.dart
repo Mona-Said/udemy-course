@@ -273,4 +273,17 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       emit(SocialLayoutLikePostsErrorState());
     });
   }
+
+  List<CreateUserModel> users = [];
+
+  void getAllUsers() {
+    FirebaseFirestore.instance.collection('users').get().then((value) {
+      value.docs.forEach((element) {
+        users.add(CreateUserModel.fromJson(element.data()));
+      });
+      emit(SocialLayoutGetAllUsersSuccessState());
+    }).catchError((error) {
+      emit(SocialLayoutGetAllUsersErrorState());
+    });
+  }
 }

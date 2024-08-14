@@ -8,6 +8,10 @@ class SocialLayoutGetUserDataSuccessState extends SocialLayoutStates {}
 
 class SocialLayoutGetUserDataErrorState extends SocialLayoutStates {}
 
+class SocialLayoutGetAllUsersSuccessState extends SocialLayoutStates {}
+
+class SocialLayoutGetAllUsersErrorState extends SocialLayoutStates {}
+
 class SocialChangeBottomNavState extends SocialLayoutStates {}
 
 class SocialAddPostState extends SocialLayoutStates {}
