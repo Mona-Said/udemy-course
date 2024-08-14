@@ -16,7 +16,8 @@ class FeedsScreen extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         return ConditionalBuilder(
-          condition: SocialLayoutCubit.get(context).posts.isNotEmpty,
+          condition: SocialLayoutCubit.get(context).posts.isNotEmpty &&
+              SocialLayoutCubit.get(context).userModel != null,
           builder: (BuildContext context) {
             return SingleChildScrollView(
               physics: const BouncingScrollPhysics(),
@@ -262,7 +263,7 @@ class FeedsScreen extends StatelessWidget {
                               width: 3.0,
                             ),
                             Text(
-                              '0 comment',
+                              '0 Comments',
                               style: Theme.of(context)
                                   .textTheme
                                   .bodySmall
