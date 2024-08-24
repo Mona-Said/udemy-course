@@ -54,3 +54,9 @@ class SocialLayoutGetPostsErrorState extends SocialLayoutStates {}
 class SocialLayoutLikePostsSuccessState extends SocialLayoutStates {}
 
 class SocialLayoutLikePostsErrorState extends SocialLayoutStates {}
+
+// chat
+
+class SocialLayoutSendMessageSuccessState extends SocialLayoutStates {}
+
+class SocialLayoutSendMessageErrorState extends SocialLayoutStates {}

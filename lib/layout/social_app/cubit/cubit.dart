@@ -15,6 +15,8 @@ import '../../../models/social_app_model/create_post_model.dart';
 import '../../../models/social_app_model/create_user_model.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
+import '../../../models/social_app_model/message_model.dart';
+
 class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   SocialLayoutCubit() : super(SocialLayoutInitialState());
 
@@ -53,6 +55,9 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   ];
 
   void changeBottomNav(int index) {
+    if (index == 1) {
+      getAllUsers();
+    }
     if (index == 2) {
       emit(SocialAddPostState());
     } else {
@@ -277,13 +282,56 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
   List<CreateUserModel> users = [];
 
   void getAllUsers() {
-    FirebaseFirestore.instance.collection('users').get().then((value) {
-      value.docs.forEach((element) {
-        users.add(CreateUserModel.fromJson(element.data()));
+    if (users.isEmpty) {
+      FirebaseFirestore.instance.collection('users').get().then((value) {
+        value.docs.forEach((element) {
+          if (element.data()['uId'] != userModel?.uId) {
+            users.add(CreateUserModel.fromJson(element.data()));
+          }
+        });
+        emit(SocialLayoutGetAllUsersSuccessState());
+      }).catchError((error) {
+        emit(SocialLayoutGetAllUsersErrorState());
       });
-      emit(SocialLayoutGetAllUsersSuccessState());
+    }
+  }
+
+  void sendMessage({
+    required String receiverId,
+    required String dateTime,
+    required String text,
+  }) {
+    MessageModel model = MessageModel(
+      senderId: userModel?.uId,
+      receiverId: receiverId,
+      dateTime: dateTime,
+      text: text,
+    );
+
+    FirebaseFirestore.instance
+        .collection('users')
+        .doc(userModel?.uId)
+        .collection('chats')
+        .doc(receiverId)
+        .collection('messages')
+        .add(model.toMap())
+        .then((value) {
+      emit(SocialLayoutSendMessageSuccessState());
     }).catchError((error) {
-      emit(SocialLayoutGetAllUsersErrorState());
+      emit(SocialLayoutSendMessageErrorState());
+    });
+
+    FirebaseFirestore.instance
+        .collection('users')
+        .doc(receiverId)
+        .collection('chats')
+        .doc(userModel?.uId)
+        .collection('messages')
+        .add(model.toMap())
+        .then((value) {
+      emit(SocialLayoutSendMessageSuccessState());
+    }).catchError((error) {
+      emit(SocialLayoutSendMessageErrorState());
     });
   }
 }
