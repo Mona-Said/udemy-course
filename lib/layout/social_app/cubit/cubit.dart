@@ -308,6 +308,7 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       text: text,
     );
 
+    //send to me
     FirebaseFirestore.instance
         .collection('users')
         .doc(userModel?.uId)
@@ -321,6 +322,7 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       emit(SocialLayoutSendMessageErrorState());
     });
 
+    //send to her
     FirebaseFirestore.instance
         .collection('users')
         .doc(receiverId)

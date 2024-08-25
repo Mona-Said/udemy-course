@@ -41,42 +41,8 @@ class ChatDetailsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                Align(
-                  alignment: AlignmentDirectional.centerStart,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0, vertical: 5.0),
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      borderRadius: const BorderRadiusDirectional.only(
-                        bottomEnd: Radius.circular(10.0),
-                        topEnd: Radius.circular(10.0),
-                        topStart: Radius.circular(10.0),
-                      ),
-                    ),
-                    child: const Text(
-                      'hello my friend',
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: AlignmentDirectional.centerEnd,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0, vertical: 5.0),
-                    decoration: BoxDecoration(
-                      color: Colors.blue[200],
-                      borderRadius: const BorderRadiusDirectional.only(
-                        bottomStart: Radius.circular(10.0),
-                        topEnd: Radius.circular(10.0),
-                        topStart: Radius.circular(10.0),
-                      ),
-                    ),
-                    child: const Text(
-                      'hello my friend',
-                    ),
-                  ),
-                ),
+                buildLeftMessage(),
+                buildRightMessage(),
                 const Spacer(),
                 Container(
                   decoration: BoxDecoration(
@@ -130,4 +96,40 @@ class ChatDetailsScreen extends StatelessWidget {
       },
     );
   }
+
+  Widget buildLeftMessage() => Align(
+        alignment: AlignmentDirectional.centerStart,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
+          decoration: BoxDecoration(
+            color: Colors.grey[300],
+            borderRadius: const BorderRadiusDirectional.only(
+              bottomEnd: Radius.circular(10.0),
+              topEnd: Radius.circular(10.0),
+              topStart: Radius.circular(10.0),
+            ),
+          ),
+          child: const Text(
+            'hello my friend',
+          ),
+        ),
+      );
+
+  Widget buildRightMessage() => Align(
+        alignment: AlignmentDirectional.centerEnd,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
+          decoration: BoxDecoration(
+            color: Colors.blue[200],
+            borderRadius: const BorderRadiusDirectional.only(
+              bottomStart: Radius.circular(10.0),
+              topEnd: Radius.circular(10.0),
+              topStart: Radius.circular(10.0),
+            ),
+          ),
+          child: const Text(
+            'hello my friend',
+          ),
+        ),
+      );
 }
