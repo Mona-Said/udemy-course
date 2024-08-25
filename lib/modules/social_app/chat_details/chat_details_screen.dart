@@ -98,6 +98,7 @@ class ChatDetailsScreen extends StatelessWidget {
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               hintText: 'type your message here...',
+                              hintStyle: TextStyle(fontSize: 14.0),
                             ),
                           ),
                         ),
