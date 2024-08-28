@@ -336,4 +336,27 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       emit(SocialLayoutSendMessageErrorState());
     });
   }
+
+  List<MessageModel> messages = [];
+
+  void getMessage({
+    required String receiverId,
+  }) {
+    FirebaseFirestore.instance
+        .collection('users')
+        .doc(userModel?.uId)
+        .collection('chats')
+        .doc(receiverId)
+        .collection('messages')
+        .orderBy('dateTime')
+        .snapshots()
+        .listen((event) {
+      messages = [];
+
+      event.docs.forEach((element) {
+        messages.add(MessageModel.fromJson(element.data()));
+      });
+      emit(SocialLayoutGetMessageState());
+    });
+  }
 }

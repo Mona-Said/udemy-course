@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:src/models/social_app_model/message_model.dart';
 
 import '../../../layout/social_app/cubit/cubit.dart';
 import '../../../layout/social_app/cubit/states.dart';
@@ -15,89 +16,110 @@ class ChatDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<SocialLayoutCubit, SocialLayoutStates>(
-      listener: (context, state) {},
-      builder: (context, state) {
-        return Scaffold(
-          appBar: AppBar(
-            titleSpacing: 0.0,
-            title: Row(
-              children: [
-                CircleAvatar(
-                  radius: 20.0,
-                  backgroundImage: NetworkImage(model!.image!),
-                ),
-                const SizedBox(
-                  width: 15.0,
-                ),
-                Text(
-                  model!.name!,
-                  style: const TextStyle(fontSize: 20.0),
-                ),
-              ],
-            ),
-          ),
-          body: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                buildLeftMessage(),
-                buildRightMessage(),
-                const Spacer(),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15.0),
-                    border: Border.all(
-                      color: Colors.grey.withOpacity(.3),
-                      width: 1.0,
+    return Builder(
+      builder: (BuildContext context) {
+        SocialLayoutCubit.get(context).getMessage(receiverId: model!.uId!);
+
+        return BlocConsumer<SocialLayoutCubit, SocialLayoutStates>(
+          listener: (context, state) {},
+          builder: (context, state) {
+            return Scaffold(
+              appBar: AppBar(
+                titleSpacing: 0.0,
+                title: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 20.0,
+                      backgroundImage: NetworkImage(model!.image!),
                     ),
-                  ),
-                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding:
-                              const EdgeInsetsDirectional.only(start: 10.0),
-                          child: TextFormField(
-                            controller: messageController,
-                            decoration: const InputDecoration(
-                              border: InputBorder.none,
-                              hintText: 'type your message here...',
-                              hintStyle: TextStyle(fontSize: 14.0),
+                    const SizedBox(
+                      width: 15.0,
+                    ),
+                    Text(
+                      model!.name!,
+                      style: const TextStyle(fontSize: 20.0),
+                    ),
+                  ],
+                ),
+              ),
+              body: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Expanded(
+                        child: ListView.separated(
+                      physics: const BouncingScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        var message =
+                            SocialLayoutCubit.get(context).messages[index];
+                        if (message.senderId ==
+                            SocialLayoutCubit.get(context).userModel?.uId) {
+                          return buildRightMessage(message);
+                        } else {
+                          return buildLeftMessage(message);
+                        }
+                      },
+                      separatorBuilder: (context, index) => const SizedBox(
+                        height: 15.0,
+                      ),
+                      itemCount: SocialLayoutCubit.get(context).messages.length,
+                    )),
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15.0),
+                        border: Border.all(
+                          color: Colors.grey.withOpacity(.3),
+                          width: 1.0,
+                        ),
+                      ),
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsetsDirectional.only(start: 10.0),
+                              child: TextFormField(
+                                controller: messageController,
+                                decoration: const InputDecoration(
+                                  border: InputBorder.none,
+                                  hintText: 'type your message here...',
+                                  hintStyle: TextStyle(fontSize: 14.0),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
+                          MaterialButton(
+                            onPressed: () {
+                              SocialLayoutCubit.get(context).sendMessage(
+                                receiverId: model!.uId!,
+                                dateTime: DateTime.now().toString(),
+                                text: messageController.text,
+                              );
+                            },
+                            color: Colors.blue,
+                            height: 55.0,
+                            minWidth: 1.0,
+                            child: const Icon(
+                              IconlyBroken.send,
+                              color: Colors.white,
+                              size: 18.0,
+                            ),
+                          ),
+                        ],
                       ),
-                      MaterialButton(
-                        onPressed: () {
-                          SocialLayoutCubit.get(context).sendMessage(
-                            receiverId: model!.uId!,
-                            dateTime: DateTime.now().toString(),
-                            text: messageController.text,
-                          );
-                        },
-                        color: Colors.blue,
-                        height: 55.0,
-                        minWidth: 1.0,
-                        child: const Icon(
-                          IconlyBroken.send,
-                          color: Colors.white,
-                          size: 18.0,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-          ),
+              ),
+            );
+          },
         );
       },
     );
   }
 
-  Widget buildLeftMessage() => Align(
+  Widget buildLeftMessage(MessageModel model) => Align(
         alignment: AlignmentDirectional.centerStart,
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
@@ -109,13 +131,13 @@ class ChatDetailsScreen extends StatelessWidget {
               topStart: Radius.circular(10.0),
             ),
           ),
-          child: const Text(
-            'hello my friend',
+          child: Text(
+            '${model.text}',
           ),
         ),
       );
 
-  Widget buildRightMessage() => Align(
+  Widget buildRightMessage(MessageModel model) => Align(
         alignment: AlignmentDirectional.centerEnd,
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
@@ -127,8 +149,8 @@ class ChatDetailsScreen extends StatelessWidget {
               topStart: Radius.circular(10.0),
             ),
           ),
-          child: const Text(
-            'hello my friend',
+          child: Text(
+            '${model.text}',
           ),
         ),
       );

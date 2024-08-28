@@ -7,7 +7,9 @@ import '../../../layout/social_app/cubit/states.dart';
 import '../../../shared/components/components.dart';
 
 class AddPostScreen extends StatelessWidget {
-  AddPostScreen({super.key});
+  AddPostScreen({
+    super.key,
+  });
 
   var postController = TextEditingController();
   var now = DateTime.now();
@@ -63,13 +65,13 @@ class AddPostScreen extends StatelessWidget {
                     const CircleAvatar(
                       radius: 25.0,
                       backgroundImage: NetworkImage(
-                          'https://img.freepik.com/premium-psd/smiling-young-brunette-woman-casual-attire-with-natural-confident-expression-looking-away-with-laughter_410516-113925.jpg?w=740'),
+                          'https://img.freepik.com/premium-psd/picture-bird-tree-with-sunset-background_1142283-309911.jpg?w=740'),
                     ),
                     const SizedBox(
                       width: 10.0,
                     ),
                     Text(
-                      'Mona Said',
+                      'Queen',
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ],

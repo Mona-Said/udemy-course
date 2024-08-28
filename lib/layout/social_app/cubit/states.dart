@@ -60,3 +60,5 @@ class SocialLayoutLikePostsErrorState extends SocialLayoutStates {}
 class SocialLayoutSendMessageSuccessState extends SocialLayoutStates {}
 
 class SocialLayoutSendMessageErrorState extends SocialLayoutStates {}
+
+class SocialLayoutGetMessageState extends SocialLayoutStates {}
