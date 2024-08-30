@@ -1,8 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:src/models/social_app_model/message_model.dart';
-
 import '../../../layout/social_app/cubit/cubit.dart';
 import '../../../layout/social_app/cubit/states.dart';
 import '../../../models/social_app_model/create_user_model.dart';
@@ -54,16 +55,19 @@ class ChatDetailsScreen extends StatelessWidget {
                             SocialLayoutCubit.get(context).messages[index];
                         if (message.senderId ==
                             SocialLayoutCubit.get(context).userModel?.uId) {
-                          return buildRightMessage(message);
+                          return buildRightMessage(message, context);
                         } else {
-                          return buildLeftMessage(message);
+                          return buildLeftMessage(message, context);
                         }
                       },
                       separatorBuilder: (context, index) => const SizedBox(
-                        height: 15.0,
+                        height: 10.0,
                       ),
                       itemCount: SocialLayoutCubit.get(context).messages.length,
                     )),
+                    const SizedBox(
+                      height: 15.0,
+                    ),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
@@ -89,13 +93,36 @@ class ChatDetailsScreen extends StatelessWidget {
                               ),
                             ),
                           ),
+                          IconButton(
+                            onPressed: () {
+                              SocialLayoutCubit.get(context).getImageMessage();
+                            },
+                            icon: const Icon(
+                              IconlyBroken.image,
+                              color: Colors.blue,
+                              size: 28.0,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 5.0,
+                          ),
                           MaterialButton(
                             onPressed: () {
-                              SocialLayoutCubit.get(context).sendMessage(
-                                receiverId: model!.uId!,
-                                dateTime: DateTime.now().toString(),
-                                text: messageController.text,
-                              );
+                              if (SocialLayoutCubit.get(context).imageMessage ==
+                                  null) {
+                                SocialLayoutCubit.get(context).sendMessage(
+                                  receiverId: model!.uId!,
+                                  dateTime: DateTime.now().toString(),
+                                  text: messageController.text,
+                                );
+                              } else {
+                                SocialLayoutCubit.get(context)
+                                    .uploadImageMessage(
+                                  dateTime: DateTime.now().toString(),
+                                  receiverId: model!.uId!,
+                                  text: messageController.text,
+                                );
+                              }
                             },
                             color: Colors.blue,
                             height: 55.0,
@@ -119,7 +146,7 @@ class ChatDetailsScreen extends StatelessWidget {
     );
   }
 
-  Widget buildLeftMessage(MessageModel model) => Align(
+  Widget buildLeftMessage(MessageModel model, context) => Align(
         alignment: AlignmentDirectional.centerStart,
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
@@ -131,13 +158,31 @@ class ChatDetailsScreen extends StatelessWidget {
               topStart: Radius.circular(10.0),
             ),
           ),
-          child: Text(
-            '${model.text}',
-          ),
+          child: model.image != null && model.image!.isNotEmpty
+              ? Container(
+                  height: 200.0,
+                  width: 150.0,
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(8.0),
+                      topRight: Radius.circular(8.0),
+                    ),
+                    image: model.image!.startsWith('http')
+                        ? DecorationImage(
+                            image: NetworkImage(model.image!),
+                            fit: BoxFit.cover,
+                          )
+                        : DecorationImage(
+                            image: FileImage(File(model.image!)),
+                            fit: BoxFit.cover,
+                          ),
+                  ),
+                )
+              : Text('${model.text}'),
         ),
       );
 
-  Widget buildRightMessage(MessageModel model) => Align(
+  Widget buildRightMessage(MessageModel model, context) => Align(
         alignment: AlignmentDirectional.centerEnd,
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
@@ -149,9 +194,27 @@ class ChatDetailsScreen extends StatelessWidget {
               topStart: Radius.circular(10.0),
             ),
           ),
-          child: Text(
-            '${model.text}',
-          ),
+          child: model.image != null && model.image!.isNotEmpty
+              ? Container(
+                  height: 200.0,
+                  width: 150.0,
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(8.0),
+                      topRight: Radius.circular(8.0),
+                    ),
+                    image: model.image!.startsWith('http')
+                        ? DecorationImage(
+                            image: NetworkImage(model.image!),
+                            fit: BoxFit.cover,
+                          )
+                        : DecorationImage(
+                            image: FileImage(File(model.image!)),
+                            fit: BoxFit.cover,
+                          ),
+                  ),
+                )
+              : Text('${model.text}'),
         ),
       );
 }

@@ -300,12 +300,14 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
     required String receiverId,
     required String dateTime,
     required String text,
+    String? image,
   }) {
     MessageModel model = MessageModel(
       senderId: userModel?.uId,
       receiverId: receiverId,
       dateTime: dateTime,
       text: text,
+      image: image ?? '',
     );
 
     //send to me
@@ -352,11 +354,58 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
         .snapshots()
         .listen((event) {
       messages = [];
-
       event.docs.forEach((element) {
         messages.add(MessageModel.fromJson(element.data()));
       });
       emit(SocialLayoutGetMessageState());
+    });
+  }
+
+  File? imageMessage;
+
+  Future<void> getImageMessage() async {
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+    if (pickedFile != null) {
+      imageMessage = File(pickedFile.path);
+      emit(SocialLayoutImageMessageSuccessState());
+    } else {
+      print('no image picked');
+      emit(SocialLayoutImageMessageErrorState());
+    }
+  }
+
+  void uploadImageMessage({
+    required String dateTime,
+    required String receiverId,
+    required String text,
+  }) {
+    if (imageMessage == null) {
+      print('No image to upload');
+      return;
+    }
+    emit(SocialLayoutSendMessageLoadingState());
+    String fileName = Uri.file(imageMessage!.path).pathSegments.last;
+    firebase_storage.FirebaseStorage.instance
+        .ref()
+        .child('messages/$fileName')
+        .putFile(imageMessage!)
+        .then((taskSnapshot) {
+      taskSnapshot.ref.getDownloadURL().then((downloadUrl) {
+        sendMessage(
+          receiverId: receiverId,
+          dateTime: dateTime,
+          text: text,
+          image: downloadUrl,
+        );
+        imageMessage = null;
+        emit(SocialLayoutSendMessageSuccessState());
+      }).catchError((error) {
+        print('Error getting download URL: ${error.toString()}');
+        emit(SocialLayoutSendMessageErrorState());
+      });
+    }).catchError((error) {
+      print('Error uploading image: ${error.toString()}');
+      emit(SocialLayoutSendMessageErrorState());
     });
   }
 }

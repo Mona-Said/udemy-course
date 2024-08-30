@@ -56,9 +56,14 @@ class SocialLayoutLikePostsSuccessState extends SocialLayoutStates {}
 class SocialLayoutLikePostsErrorState extends SocialLayoutStates {}
 
 // chat
+class SocialLayoutSendMessageLoadingState extends SocialLayoutStates {}
 
 class SocialLayoutSendMessageSuccessState extends SocialLayoutStates {}
 
 class SocialLayoutSendMessageErrorState extends SocialLayoutStates {}
 
 class SocialLayoutGetMessageState extends SocialLayoutStates {}
+
+class SocialLayoutImageMessageSuccessState extends SocialLayoutStates {}
+
+class SocialLayoutImageMessageErrorState extends SocialLayoutStates {}
