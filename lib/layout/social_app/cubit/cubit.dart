@@ -408,4 +408,16 @@ class SocialLayoutCubit extends Cubit<SocialLayoutStates> {
       emit(SocialLayoutSendMessageErrorState());
     });
   }
+
+  final ScrollController scrollController = ScrollController();
+
+  void scrollToBottom() {
+    if (scrollController.hasClients) {
+      scrollController.animateTo(
+        scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+    }
+  }
 }

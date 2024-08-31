@@ -22,7 +22,9 @@ class ChatDetailsScreen extends StatelessWidget {
         SocialLayoutCubit.get(context).getMessage(receiverId: model!.uId!);
 
         return BlocConsumer<SocialLayoutCubit, SocialLayoutStates>(
-          listener: (context, state) {},
+          listener: (context, state) {
+            SocialLayoutCubit.get(context).scrollToBottom();
+          },
           builder: (context, state) {
             return Scaffold(
               appBar: AppBar(
@@ -50,6 +52,8 @@ class ChatDetailsScreen extends StatelessWidget {
                     Expanded(
                         child: ListView.separated(
                       physics: const BouncingScrollPhysics(),
+                      controller:
+                          SocialLayoutCubit.get(context).scrollController,
                       itemBuilder: (context, index) {
                         var message =
                             SocialLayoutCubit.get(context).messages[index];
