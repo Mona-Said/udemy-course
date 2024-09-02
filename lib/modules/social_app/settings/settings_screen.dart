@@ -1,3 +1,4 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -211,6 +212,53 @@ class SettingsScreen extends StatelessWidget {
                       color: Colors.blue,
                     ),
                   ),
+                ],
+              ),
+              const SizedBox(
+                height: 15.0,
+              ),
+              Row(
+                children: [
+                  OutlinedButton(
+                      style: ButtonStyle(
+                          side: MaterialStateProperty.all(
+                              const BorderSide(color: Colors.grey, width: 0.5)),
+                          shape: MaterialStateProperty.all(
+                            const ContinuousRectangleBorder(
+                              borderRadius: BorderRadiusDirectional.all(
+                                Radius.circular(8.0),
+                              ),
+                            ),
+                          )),
+                      onPressed: () {
+                        FirebaseMessaging.instance.subscribeToTopic('Target');
+                      },
+                      child: const Text(
+                        'subscribed',
+                        style: TextStyle(color: Colors.green),
+                      )),
+                  const SizedBox(
+                    width: 10.0,
+                  ),
+                  OutlinedButton(
+                      style: ButtonStyle(
+                          side: MaterialStateProperty.all(
+                              const BorderSide(color: Colors.grey, width: 0.5)),
+                          shape: MaterialStateProperty.all(
+                            const ContinuousRectangleBorder(
+                              borderRadius: BorderRadiusDirectional.all(
+                                Radius.circular(8.0),
+                              ),
+                            ),
+                          )),
+                      onPressed: () {
+                        FirebaseMessaging.instance
+                            .unsubscribeFromTopic('Target');
+                      },
+                      child: const Text(
+                        'unsubscribed',
+                        style: TextStyle(color: Colors.grey),
+                      )),
                 ],
               ),
             ],

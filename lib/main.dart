@@ -7,6 +7,7 @@ import 'package:src/layout/news_app/cubit/states2.dart';
 import 'package:src/layout/shop_app/cubit/cubit.dart';
 import 'package:src/layout/social_app/cubit/cubit.dart';
 import 'package:src/layout/social_app/social_layout_screen.dart';
+import 'package:src/notifications_helper.dart';
 import 'package:src/shared/bloc_observer.dart';
 import 'package:src/shared/components/components.dart';
 import 'package:src/shared/components/constants.dart';
@@ -47,6 +48,8 @@ void main() async {
   });
 
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+
+  NotificationsHelper.getAccessToken();
 
   Bloc.observer = MyBlocObserver();
   DioHelper.init();
