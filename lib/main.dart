@@ -1,7 +1,9 @@
+import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:src/firebase_options.dart';
 import 'package:src/layout/news_app/cubit/states2.dart';
 import 'package:src/layout/news_app/news_layout.dart';
@@ -16,6 +18,7 @@ import 'package:src/shared/network/local/cache_helper.dart';
 import 'package:src/shared/network/remote/dio_helper_news_app.dart';
 import 'package:src/shared/network/remote/dio_helper_shop_app.dart';
 import 'package:src/shared/styles/themes.dart';
+import 'package:window_manager/window_manager.dart';
 import 'layout/news_app/cubit/cubit.dart';
 import 'layout/news_app/cubit/cubit2.dart';
 import 'modules/social_app/social_login/social_login_screen.dart';
@@ -51,6 +54,10 @@ void main() async {
   // FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
   //
   // NotificationsHelper.getAccessToken();
+
+  if (Platform.isWindows) {
+    WindowManager.instance.setMinimumSize(const Size(600, 400));
+  }
 
   Bloc.observer = MyBlocObserver();
   DioHelper.init();
@@ -131,7 +138,18 @@ class MyApp extends StatelessWidget {
             themeMode: DarkCubit.get(context).isDark
                 ? ThemeMode.dark
                 : ThemeMode.light,
-            home: const NewsLayoutScreen(),
+            home: ScreenTypeLayout(
+              mobile: const NewsLayoutScreen(),
+              breakpoints: const ScreenBreakpoints(
+                desktop: 850.0,
+                tablet: 350.0,
+                watch: 350.0,
+              ),
+              desktop: const Text(
+                'DESKTOP',
+                style: TextStyle(color: Colors.blueAccent),
+              ),
+            ),
           );
         },
       ),
