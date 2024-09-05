@@ -6,14 +6,12 @@ import 'package:src/modules/news_app/science/science_screen.dart';
 import 'package:src/modules/news_app/sports/sports_screen.dart';
 import 'package:src/shared/network/remote/dio_helper_news_app.dart';
 
-class NewsCubit extends Cubit<NewsStates>
-{
+class NewsCubit extends Cubit<NewsStates> {
   NewsCubit() : super(NewsInitialState());
 
   static NewsCubit get(context) => BlocProvider.of(context);
 
-  List<BottomNavigationBarItem> items =
-  [
+  List<BottomNavigationBarItem> items = [
     const BottomNavigationBarItem(
       icon: Icon(
         Icons.business,
@@ -34,8 +32,7 @@ class NewsCubit extends Cubit<NewsStates>
     ),
   ];
 
-  List <Widget> screens =
-  [
+  List<Widget> screens = [
     const BusinessScreen(),
     const SportsScreen(),
     const ScienceScreen(),
@@ -43,132 +40,123 @@ class NewsCubit extends Cubit<NewsStates>
 
   int currentIndex = 0;
 
-  void changeBottomNav(int index){
+  void changeBottomNav(int index) {
     currentIndex = index;
-    if (index==1)
-    {
+    if (index == 1) {
       getSports();
     }
-    if (index==2)
-    {
+    if (index == 2) {
       getScience();
     }
     emit(NewsChangeBottomNavBarState());
   }
 
-  List<dynamic> business =[];
+  List<dynamic> business = [];
 
-  void getBusiness()
-  {
+  int businessItemSelected = 0;
+
+  void getItemSelected(index) {
+    businessItemSelected = index;
+    emit(BusinessItemSelectedState());
+  }
+
+  bool isDesktop = false;
+
+  void getLocationDesktop(bool value) {
+    isDesktop = value;
+    emit(BusinessGetDesktopLocationState());
+  }
+
+  void getBusiness() {
     emit(BusinessGetLoadingState());
 
-    if (business.isEmpty)
-    {
-      DioHelper.getData(
-          url: 'v2/top-headlines',
-          query: {
-            'country':'eg',
-            'category':'business',
-            'apiKey':'abdea69a40a24a64be364ed51325ba9f',
-          }
-      ).then((value) {
+    if (business.isEmpty) {
+      DioHelper.getData(url: 'v2/top-headlines', query: {
+        'country': 'us',
+        'category': 'business',
+        'apiKey': 'ff6a41d64bcb408abb5d14338acf02bf',
+      }).then((value) {
         //print(value.data.toString());
-        business= value.data['articles'];
+        business = value.data['articles'];
         print(business[0]['title']);
         emit(BusinessSuccessState());
-      }).catchError((error){
+      }).catchError((error) {
         print(error.toString());
         emit(BusinessErrorState(error.toString()));
       });
-    }else
-    {
+    } else {
       emit(BusinessSuccessState());
-
     }
-
   }
 
-  List<dynamic> sports =[];
+  List<dynamic> sports = [];
 
-  void getSports()
-  {
+  void getSports() {
     emit(SportsGetLoadingState());
-    if(sports.isEmpty)
-    {
-      DioHelper.getData(
-          url: 'v2/top-headlines',
-          query: {
-            'country':'eg',
-            'category':'sports',
-            'apiKey':'abdea69a40a24a64be364ed51325ba9f',
-          }
-      ).then((value) {
-        //print(value.data.toString());
-        sports= value.data['articles'];
-        print(sports[0]['title']);
+
+    if (sports.isEmpty) {
+      DioHelper.getData(url: 'v2/top-headlines', query: {
+        'country': 'us',
+        'category': 'sports',
+        'apiKey': 'ff6a41d64bcb408abb5d14338acf02bf',
+      }).then((value) {
+        // Ensure that articles exist in the response
+        if (value.data['articles'] != null &&
+            value.data['articles'].isNotEmpty) {
+          sports = value.data['articles'];
+          print(sports[0]['title']); // Safe access
+        } else {
+          print("No articles found");
+          // Handle empty articles case
+        }
         emit(SportsSuccessState());
-      }).catchError((error){
+      }).catchError((error) {
         print(error.toString());
         emit(SportsErrorState(error.toString()));
       });
-    }else
-    {
+    } else {
       emit(SportsSuccessState());
     }
-
   }
 
-  List<dynamic> science =[];
+  List<dynamic> science = [];
 
-  void getScience()
-  {
+  void getScience() {
     emit(ScienceGetLoadingState());
-    if(science.isEmpty)
-    {
-      DioHelper.getData(
-          url: 'v2/top-headlines',
-          query: {
-            'country':'eg',
-            'category':'science',
-            'apiKey':'abdea69a40a24a64be364ed51325ba9f',
-          }
-      ).then((value) {
+    if (science.isEmpty) {
+      DioHelper.getData(url: 'v2/top-headlines', query: {
+        'country': 'us',
+        'category': 'science',
+        'apiKey': 'ff6a41d64bcb408abb5d14338acf02bf',
+      }).then((value) {
         //print(value.data.toString());
-        science= value.data['articles'];
+        science = value.data['articles'];
         print(science[0]['title']);
         emit(ScienceSuccessState());
-      }).catchError((error){
+      }).catchError((error) {
         print(error.toString());
         emit(ScienceErrorState(error.toString()));
       });
-
-    }else
-    {
+    } else {
       emit(ScienceSuccessState());
     }
-
   }
 
-  List<dynamic> search =[];
+  List<dynamic> search = [];
 
-  void getSearch(value)
-  {
+  void getSearch(value) {
     emit(SearchGetLoadingState());
-    DioHelper.getData(
-        url: 'v2/everything',
-        query: {
-          'q':'$value',
-          'apiKey':'abdea69a40a24a64be364ed51325ba9f',
-        }
-    ).then((value) {
+    DioHelper.getData(url: 'v2/everything', query: {
+      'q': '$value',
+      'apiKey': 'ff6a41d64bcb408abb5d14338acf02bf',
+    }).then((value) {
       //print(value.data.toString());
-      search= value.data['articles'];
+      search = value.data['articles'];
       print(search[0]['title']);
       emit(SearchSuccessState());
-    }).catchError((error){
+    }).catchError((error) {
       print(error.toString());
       emit(SearchErrorState(error.toString()));
     });
-
   }
 }

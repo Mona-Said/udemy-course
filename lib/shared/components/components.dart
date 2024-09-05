@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:src/layout/news_app/cubit/cubit.dart';
 import 'package:src/modules/news_app/web_view/webview_screen.dart';
 import 'package:src/shared/cubit/cubit.dart';
 
@@ -237,53 +238,59 @@ Widget taskBuilder({required List<Map> tasks}) => ConditionalBuilder(
       ),
     );
 
-Widget newsItemBuilder(article, context) => InkWell(
-      onTap: () {
-        navigateTo(context, WebViewScreen(url: article['url']));
-      },
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Row(
-          children: [
-            Container(
-              height: 120.0,
-              width: 120.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15.0),
-                image: const DecorationImage(
-                  image: NetworkImage(
-                      'https://media.istockphoto.com/id/1065782416/photo/online-news-in-mobile-phone-close-up-of-smartphone-screen-man-reading-articles-in-application.webp?b=1&s=170667a&w=0&k=20&c=3sEfQJpggmkOhFRisDiwqO3GGDNnholVOmA15956ViE='),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            const SizedBox(
-              width: 15.0,
-            ),
-            Expanded(
-              child: SizedBox(
+Widget newsItemBuilder(article, context, index) => Container(
+      color: NewsCubit.get(context).businessItemSelected == index &&
+              NewsCubit.get(context).isDesktop
+          ? Colors.grey[100]
+          : null,
+      child: InkWell(
+        onTap: () {
+          // navigateTo(context, WebViewScreen(url: article['url']));
+          NewsCubit.get(context).getItemSelected(index);
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Row(
+            children: [
+              Container(
                 height: 120.0,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Text(
-                        '${article['title']}',
-                        style: Theme.of(context).textTheme.bodyLarge,
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    Text(
-                      '${article['publishedAt']}',
-                      style: const TextStyle(color: Colors.grey),
-                    ),
-                  ],
+                width: 120.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  image: DecorationImage(
+                    image: NetworkImage('${article['urlToImage']}'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-          ],
+              const SizedBox(
+                width: 15.0,
+              ),
+              Expanded(
+                child: SizedBox(
+                  height: 120.0,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '${article['title']}',
+                          style: Theme.of(context).textTheme.bodyLarge,
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      Text(
+                        '${article['publishedAt']}',
+                        style: const TextStyle(color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -293,7 +300,8 @@ Widget newsScreenBuilder(list, context, {isSearch = false}) =>
       condition: list.isNotEmpty,
       builder: (context) => ListView.separated(
         physics: const BouncingScrollPhysics(),
-        itemBuilder: (context, index) => newsItemBuilder(list[index], context),
+        itemBuilder: (context, index) =>
+            newsItemBuilder(list[index], context, index),
         separatorBuilder: (context, index) => myDivider(),
         itemCount: list.length,
       ),

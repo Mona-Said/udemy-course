@@ -55,9 +55,9 @@ void main() async {
   //
   // NotificationsHelper.getAccessToken();
 
-  if (Platform.isWindows) {
-    WindowManager.instance.setMinimumSize(const Size(600, 400));
-  }
+  // if (Platform.isWindows) {
+  //   WindowManager.instance.setMinimumSize(const Size(600, 400));
+  // }
 
   Bloc.observer = MyBlocObserver();
   DioHelper.init();
@@ -138,18 +138,7 @@ class MyApp extends StatelessWidget {
             themeMode: DarkCubit.get(context).isDark
                 ? ThemeMode.dark
                 : ThemeMode.light,
-            home: ScreenTypeLayout(
-              mobile: const NewsLayoutScreen(),
-              breakpoints: const ScreenBreakpoints(
-                desktop: 850.0,
-                tablet: 350.0,
-                watch: 350.0,
-              ),
-              desktop: const Text(
-                'DESKTOP',
-                style: TextStyle(color: Colors.blueAccent),
-              ),
-            ),
+            home: const NewsLayoutScreen(),
           );
         },
       ),

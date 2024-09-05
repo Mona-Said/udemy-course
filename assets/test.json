@@ -1,4 +1,266 @@
-{"status":"ok",
-  "totalResults":34,
-  "articles":
-[{"source":{"id":"google-news","name":"Google News"},"author":"العربية","title":"ابنة رجاء الجداوي تكشف سراً عن والدتها.. ما هو؟ - العربية","description":null,"url":"https://news.google.com/rss/articles/CBMimwJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2N1bHR1cmUtYW5kLWFydC8yMDIzLzA5LzA2LyVEOCVBNyVEOCVBOCVEOSU4NiVEOCVBOS0lRDglQjElRDglQUMlRDglQTclRDglQTEtJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ4JUFGJUQ4JUE3JUQ5JTg4JUQ5JThBLSVEOCVBQSVEOSU4MyVEOCVCNCVEOSU4MS0lRDglQjMlRDglQjElRDglQTclRDklOEItJUQ4JUI5JUQ5JTg2LSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBRiVEOCVBQSVEOSU4NyVEOCVBNy0lRDklODUlRDglQTctJUQ5JTg3JUQ5JTg4JUQ4JTlG0gGfAmh0dHBzOi8vd3d3LmFsYXJhYml5YS5uZXQvYW1wL2N1bHR1cmUtYW5kLWFydC8yMDIzLzA5LzA2LyVEOCVBNyVEOCVBOCVEOSU4NiVEOCVBOS0lRDglQjElRDglQUMlRDglQTclRDglQTEtJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ4JUFGJUQ4JUE3JUQ5JTg4JUQ5JThBLSVEOCVBQSVEOSU4MyVEOCVCNCVEOSU4MS0lRDglQjMlRDglQjElRDglQTclRDklOEItJUQ4JUI5JUQ5JTg2LSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBRiVEOCVBQSVEOSU4NyVEOCVBNy0lRDklODUlRDglQTctJUQ5JTg3JUQ5JTg4JUQ4JTlG?oc=5","urlToImage":null,"publishedAt":"2023-09-05T20:31:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"Al Masry Al Youm - المصري اليوم","title":"علياء بسيوني تحضر حفل أحمد سعد بـ«بور سعيد» بعد انفصالهما - Al Masry Al Youm - المصري اليوم","description":null,"url":"https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8yOTc0NzUy0gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T19:19:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"أريبيان بزنس","title":"تعين أول امرأة لتدريب المنتخب الإسباني للسيدات - أريبيان بزنس","description":null,"url":"https://news.google.com/rss/articles/CBMi3AFodHRwczovL2FyYWJpYy5hcmFiaWFuYnVzaW5lc3MuY29tL2FibmV3cy8lRDglQTMlRDklODglRDklODQtJUQ4JUE3JUQ5JTg1JUQ4JUIxJUQ4JUEzJUQ4JUE5LSVEOSU4NCVEOCVBQSVEOCVBRiVEOCVCMSVEOSU4QSVEOCVBOC0lRDglQTclRDklODQlRDglQTUlRDglQjMlRDglQTglRDglQTclRDklODYlRDklOEEtJUQ5JTg0JUQ5JTg0JUQ4JUIzJUQ5JThBJUQ4JUFGJUQ4JUE3JUQ4JUFB0gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T18:50:34Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"Al Masry Al Youm - المصري اليوم","title":"هبوط عالمي جديد.. سعر الذهب اليوم الثلاثاء 5 سبتمبر 2023 (عيار 21 الآن بختام التعاملات) - Al Masry Al Youm - المصري اليوم","description":null,"url":"https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8yOTc0Njk10gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T18:39:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"الحرة","title":"البيت الأبيض: كوريا الشمالية \"ستدفع الثمن\" إذا زودت روسيا بأسلحة - الحرة","description":null,"url":"https://news.google.com/rss/articles/CBMi_QJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyMy8wOS8wNS8lRDglQTclRDklODQlRDglQTglRDklOEElRDglQUEtJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ4JUE4JUQ5JThBJUQ4JUI2LSVEOSU4MyVEOSU4OCVEOCVCMSVEOSU4QSVEOCVBNy0lRDglQTclRDklODQlRDglQjQlRDklODUlRDglQTclRDklODQlRDklOEElRDglQTktJUQ4JUIzJUQ4JUFBJUQ4JUFGJUQ5JTgxJUQ4JUI5LSVEOCVBNyVEOSU4NCVEOCVBQiVEOSU4NSVEOSU4Ni0lRDglQTUlRDglQjAlRDglQTctJUQ4JUIyJUQ5JTg4JUQ4JUFGJUQ4JUFBLSVEOCVCMSVEOSU4OCVEOCVCMyVEOSU4QSVEOCVBNy0lRDglQTglRDglQTMlRDglQjMlRDklODQlRDglQUQlRDglQTnSAYEDaHR0cHM6Ly93d3cuYWxodXJyYS5jb20vYXJhYmljLWFuZC1pbnRlcm5hdGlvbmFsLzIwMjMvMDkvMDUvJUQ4JUE3JUQ5JTg0JUQ4JUE4JUQ5JThBJUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBMyVEOCVBOCVEOSU4QSVEOCVCNi0lRDklODMlRDklODglRDglQjElRDklOEElRDglQTctJUQ4JUE3JUQ5JTg0JUQ4JUI0JUQ5JTg1JUQ4JUE3JUQ5JTg0JUQ5JThBJUQ4JUE5LSVEOCVCMyVEOCVBQSVEOCVBRiVEOSU4MSVEOCVCOS0lRDglQTclRDklODQlRDglQUIlRDklODUlRDklODYtJUQ4JUE1JUQ4JUIwJUQ4JUE3LSVEOCVCMiVEOSU4OCVEOCVBRiVEOCVBQS0lRDglQjElRDklODglRDglQjMlRDklOEElRDglQTctJUQ4JUE4JUQ4JUEzJUQ4JUIzJUQ5JTg0JUQ4JUFEJUQ4JUE5P2FtcA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T18:21:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"بوابة النيل الإخباري","title":"مواصفات وعيوب ايفون iPhone 15 Pro Max وسعره في السعودية ومصر والامارات - بوابة النيل الإخباري","description":null,"url":"https://news.google.com/rss/articles/CBMi5QFodHRwczovL25ld3N5Lm5pbGU0LmNvbS8zNjc0NDkvJUQ5JTg1JUQ5JTg4JUQ4JUE3JUQ4JUI1JUQ5JTgxJUQ4JUE3JUQ4JUFBLSVEOSU4OCVEOCVCOSVEOSU4QSVEOSU4OCVEOCVBOC0lRDglQTclRDklOEElRDklODElRDklODglRDklODYtaXBob25lLTE1LXByby1tYXgtJUQ5JTg4JUQ4JUIzJUQ4JUI5JUQ4JUIxJUQ5JTg3LSVEOSU4MSVEOSU4QS0lRDglQTclRDklODQlRDglQjMlRDglQjklRDklODgv0gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T18:03:44Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"Btolat","title":"ذا صن: انقسام في ليفربول بشأن عرض اتحاد جدة لضم محمد صلاح - Btolat","description":null,"url":"https://news.google.com/rss/articles/CBMiImh0dHBzOi8vd3d3LmJ0b2xhdC5jb20vbmV3cy8zMjQ5NTXSASlodHRwczovL21vYmlsZS5idG9sYXQuY29tL2FtcC9uZXdzLzMyNDk1NQ?oc=5","urlToImage":null,"publishedAt":"2023-09-05T18:03:44Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"صحيفة الشرق الأوسط","title":"مصر: أول رحلة جوية مباشرة إلى بورتسودان - صحيفة الشرق الأوسط","description":null,"url":"https://news.google.com/rss/articles/CBMi7wJodHRwczovL2Fhd3NhdC5jb20vJUQ4JUE3JUQ5JTg0JUQ4JUI5JUQ4JUE3JUQ5JTg0JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVCOSVEOCVCMSVEOCVBOCVEOSU4QS8lRDglQjQlRDklODUlRDglQTclRDklODQtJUQ4JUE3JUQ5JTgxJUQ4JUIxJUQ5JThBJUQ5JTgyJUQ5JThBJUQ4JUE3LzQ1Mjg4NzYtJUQ5JTg1JUQ4JUI1JUQ4JUIxLSVEOCVBMyVEOSU4OCVEOSU4NC0lRDglQjElRDglQUQlRDklODQlRDglQTktJUQ4JUFDJUQ5JTg4JUQ5JThBJUQ4JUE5LSVEOSU4NSVEOCVBOCVEOCVBNyVEOCVCNCVEOCVCMSVEOCVBOS0lRDglQTUlRDklODQlRDklODktJUQ4JUE4JUQ5JTg4JUQ4JUIxJUQ4JUFBJUQ4JUIzJUQ5JTg4JUQ4JUFGJUQ4JUE3JUQ5JTg20gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T18:00:56Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"اليوم السابع","title":"رنجة على الهواء.. أكلة جمعت صاحبة السعادة وماجد الكدوانى (فيديو) - اليوم السابع","description":null,"url":"https://news.google.com/rss/articles/CBMi6AJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy85LzUvJUQ4JUIxJUQ5JTg2JUQ4JUFDJUQ4JUE5LSVEOCVCOSVEOSU4NCVEOSU4OS0lRDglQTclRDklODQlRDklODclRDklODglRDglQTclRDglQTEtJUQ4JUEzJUQ5JTgzJUQ5JTg0JUQ4JUE5LSVEOCVBQyVEOSU4NSVEOCVCOSVEOCVBQS0lRDglQjUlRDglQTclRDglQUQlRDglQTglRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUIzJUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOSU4OCVEOSU4NSVEOCVBNyVEOCVBQyVEOCVBRi0lRDglQTclRDklODQlRDklODMlRDglQUYlRDklODglRDglQTclRDklODYlRDklODktJUQ5JTgxJUQ5JThBJUQ4JUFGJUQ5JThBJUQ5JTg4LzYyOTUxOTHSAeQCaHR0cHM6Ly9tLnlvdW03LmNvbS9hbXAvMjAyMy85LzUvJUQ4JUIxJUQ5JTg2JUQ4JUFDJUQ4JUE5LSVEOCVCOSVEOSU4NCVEOSU4OS0lRDglQTclRDklODQlRDklODclRDklODglRDglQTclRDglQTEtJUQ4JUEzJUQ5JTgzJUQ5JTg0JUQ4JUE5LSVEOCVBQyVEOSU4NSVEOCVCOSVEOCVBQS0lRDglQjUlRDglQTclRDglQUQlRDglQTglRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUIzJUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOSU4OCVEOSU4NSVEOCVBNyVEOCVBQyVEOCVBRi0lRDglQTclRDklODQlRDklODMlRDglQUYlRDklODglRDglQTclRDklODYlRDklODktJUQ5JTgxJUQ5JThBJUQ4JUFGJUQ5JThBJUQ5JTg4LzYyOTUxOTE?oc=5","urlToImage":null,"publishedAt":"2023-09-05T17:13:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"اليوم السابع","title":"جدول مباريات كأس العالم للأندية 2023.. الأهلى ينتظر الاتحاد \"إنفوجراف\" - اليوم السابع","description":null,"url":"https://news.google.com/rss/articles/CBMi-AJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy85LzUvJUQ4JUFDJUQ4JUFGJUQ5JTg4JUQ5JTg0LSVEOSU4NSVEOCVBOCVEOCVBNyVEOCVCMSVEOSU4QSVEOCVBNyVEOCVBQS0lRDklODMlRDglQTMlRDglQjMtJUQ4JUE3JUQ5JTg0JUQ4JUI5JUQ4JUE3JUQ5JTg0JUQ5JTg1LSVEOSU4NCVEOSU4NCVEOCVBMyVEOSU4NiVEOCVBRiVEOSU4QSVEOCVBOS0yMDIzLSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NyVEOSU4NCVEOSU4OS0lRDklOEElRDklODYlRDglQUElRDglQjglRDglQjEtJUQ4JUE3JUQ5JTg0JUQ4JUE3JUQ4JUFBJUQ4JUFEJUQ4JUE3JUQ4JUFGLSVEOCVBNSVEOSU4NiVEOSU4MSVEOSU4OCVEOCVBQyVEOCVCMSVEOCVBNyVEOSU4MS82Mjk1MDg20gH0Amh0dHBzOi8vbS55b3VtNy5jb20vYW1wLzIwMjMvOS81LyVEOCVBQyVEOCVBRiVEOSU4OCVEOSU4NC0lRDklODUlRDglQTglRDglQTclRDglQjElRDklOEElRDglQTclRDglQUEtJUQ5JTgzJUQ4JUEzJUQ4JUIzLSVEOCVBNyVEOSU4NCVEOCVCOSVEOCVBNyVEOSU4NCVEOSU4NS0lRDklODQlRDklODQlRDglQTMlRDklODYlRDglQUYlRDklOEElRDglQTktMjAyMy0lRDglQTclRDklODQlRDglQTMlRDklODclRDklODQlRDklODktJUQ5JThBJUQ5JTg2JUQ4JUFBJUQ4JUI4JUQ4JUIxLSVEOCVBNyVEOSU4NCVEOCVBNyVEOCVBQSVEOCVBRCVEOCVBNyVEOCVBRi0lRDglQTUlRDklODYlRDklODElRDklODglRDglQUMlRDglQjElRDglQTclRDklODEvNjI5NTA4Ng?oc=5","urlToImage":null,"publishedAt":"2023-09-05T17:11:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"كورة بلس","title":"أهداف مباراة الأهلي الودية أمام NK Aluminiji في معسكر النمسا - كورة بلس","description":null,"url":"https://news.google.com/rss/articles/CBMipwJodHRwczovL2tvcmFwbHVzLmNvbS9BcnRpY2xlLzk3MjY0LyVEOCVBMyVEOSU4NyVEOCVBRiVEOCVBNyVEOSU4MS0lRDklODUlRDglQTglRDglQTclRDglQjElRDglQTclRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ5JTg3JUQ5JTg0JUQ5JThBLSVEOCVBNyVEOSU4NCVEOSU4OCVEOCVBRiVEOSU4QSVEOCVBOS0lRDglQTMlRDklODUlRDglQTclRDklODUtTkstQWx1bWluaWppLSVEOSU4MSVEOSU4QS0lRDklODUlRDglQjklRDglQjMlRDklODMlRDglQjEtJUQ4JUE3JUQ5JTg0JUQ5JTg2JUQ5JTg1JUQ4JUIzJUQ4JUE30gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T16:14:43Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"مصر النهاردة","title":"عشاق إي فوتبول بيس.. تعرف على الإصدار الجديد 2024 وكيفية تحديث اللعبة 2024 eFootball pes mobile - مصر النهاردة","description":null,"url":"https://news.google.com/rss/articles/CBMiQWh0dHBzOi8vYXIubWlzcmR5LmNvbS8yMDIzLzA5LzIwMjQtMjAyNC1lZm9vdGJhbGwtcGVzLW1vYmlsZS5odG1s0gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T16:10:28Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"العربية","title":"5 أطعمة تفيد صحة الدماغ وتحسن الحالة المزاجية - العربية","description":null,"url":"https://news.google.com/rss/articles/CBMioAJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L21lZGljaW5lLWFuZC1oZWFsdGgvMjAyMy8wOS8wNS81LSVEOCVBMyVEOCVCNyVEOCVCOSVEOSU4NSVEOCVBOS0lRDglQUElRDklODElRDklOEElRDglQUYtJUQ4JUI1JUQ4JUFEJUQ4JUE5LSVEOCVBNyVEOSU4NCVEOCVBRiVEOSU4NSVEOCVBNyVEOCVCQS0lRDklODglRDglQUElRDglQUQlRDglQjMlRDklODYtJUQ4JUE3JUQ5JTg0JUQ4JUFEJUQ4JUE3JUQ5JTg0JUQ4JUE5LSVEOCVBNyVEOSU4NCVEOSU4NSVEOCVCMiVEOCVBNyVEOCVBQyVEOSU4QSVEOCVBOS3SAaQCaHR0cHM6Ly93d3cuYWxhcmFiaXlhLm5ldC9hbXAvbWVkaWNpbmUtYW5kLWhlYWx0aC8yMDIzLzA5LzA1LzUtJUQ4JUEzJUQ4JUI3JUQ4JUI5JUQ5JTg1JUQ4JUE5LSVEOCVBQSVEOSU4MSVEOSU4QSVEOCVBRi0lRDglQjUlRDglQUQlRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ5JTg1JUQ4JUE3JUQ4JUJBLSVEOSU4OCVEOCVBQSVEOCVBRCVEOCVCMyVEOSU4Ni0lRDglQTclRDklODQlRDglQUQlRDglQTclRDklODQlRDglQTktJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUIyJUQ4JUE3JUQ4JUFDJUQ5JThBJUQ4JUE5LQ?oc=5","urlToImage":null,"publishedAt":"2023-09-05T15:56:31Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"اليوم السابع","title":"أخبار مصر.. ارتفاع درجات الحرارة غداً بأغلب الأنحاء والعظمى بالقاهرة 37 درجة - اليوم السابع","description":null,"url":"https://news.google.com/rss/articles/CBMijANodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy85LzUvJUQ4JUEzJUQ4JUFFJUQ4JUE4JUQ4JUE3JUQ4JUIxLSVEOSU4NSVEOCVCNSVEOCVCMS0lRDglQTclRDglQjElRDglQUElRDklODElRDglQTclRDglQjktJUQ4JUFGJUQ4JUIxJUQ4JUFDJUQ4JUE3JUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBRCVEOCVCMSVEOCVBNyVEOCVCMSVEOCVBOS0lRDglQkElRDglQUYlRDglQTclRDklOEItJUQ4JUE4JUQ4JUEzJUQ4JUJBJUQ5JTg0JUQ4JUE4LSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NiVEOCVBRCVEOCVBNyVEOCVBMS0lRDklODglRDglQTclRDklODQlRDglQjklRDglQjglRDklODUlRDklODktJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ5JTgyJUQ4JUE3JUQ5JTg3JUQ4JUIxJUQ4JUE5LzYyOTUwNjDSAYgDaHR0cHM6Ly9tLnlvdW03LmNvbS9hbXAvMjAyMy85LzUvJUQ4JUEzJUQ4JUFFJUQ4JUE4JUQ4JUE3JUQ4JUIxLSVEOSU4NSVEOCVCNSVEOCVCMS0lRDglQTclRDglQjElRDglQUElRDklODElRDglQTclRDglQjktJUQ4JUFGJUQ4JUIxJUQ4JUFDJUQ4JUE3JUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBRCVEOCVCMSVEOCVBNyVEOCVCMSVEOCVBOS0lRDglQkElRDglQUYlRDglQTclRDklOEItJUQ4JUE4JUQ4JUEzJUQ4JUJBJUQ5JTg0JUQ4JUE4LSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NiVEOCVBRCVEOCVBNyVEOCVBMS0lRDklODglRDglQTclRDklODQlRDglQjklRDglQjglRDklODUlRDklODktJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ5JTgyJUQ4JUE3JUQ5JTg3JUQ4JUIxJUQ4JUE5LzYyOTUwNjA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T15:00:00Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"الكونسلتو","title":"أعراض ارتفاع الكوليسترول- 7 علامات تصدر من المعدة - الكونسلتو","description":null,"url":"https://news.google.com/rss/articles/CBMiwQJodHRwczovL3d3dy5lbGNvbnNvbHRvLmNvbS9jaHJvbmljL2Nocm9uaWMtbmV3cy9kZXRhaWxzLzIwMjMvOS81LzI0NjM5NjAvJUQ4JUEzJUQ4JUI5JUQ4JUIxJUQ4JUE3JUQ4JUI2LSVEOCVBNyVEOCVCMSVEOCVBQSVEOSU4MSVEOCVBNyVEOCVCOS0lRDglQTclRDklODQlRDklODMlRDklODglRDklODQlRDklOEElRDglQjMlRDglQUElRDglQjElRDklODglRDklODQtNy0lRDglQjklRDklODQlRDglQTclRDklODUlRDglQTclRDglQUEtJUQ4JUFBJUQ4JUI1JUQ4JUFGJUQ4JUIxLSVEOSU4NSVEOSU4Ni0lRDglQTclRDklODQlRDklODUlRDglQjklRDglQUYlRDglQTnSAcUCaHR0cHM6Ly93d3cuZWxjb25zb2x0by5jb20vY2hyb25pYy9jaHJvbmljLW5ld3MvZGV0YWlscy8yMDIzLzkvNS8yNDYzOTYwLyVEOCVBMyVEOCVCOSVEOCVCMSVEOCVBNyVEOCVCNi0lRDglQTclRDglQjElRDglQUElRDklODElRDglQTclRDglQjktJUQ4JUE3JUQ5JTg0JUQ5JTgzJUQ5JTg4JUQ5JTg0JUQ5JThBJUQ4JUIzJUQ4JUFBJUQ4JUIxJUQ5JTg4JUQ5JTg0LTctJUQ4JUI5JUQ5JTg0JUQ4JUE3JUQ5JTg1JUQ4JUE3JUQ4JUFBLSVEOCVBQSVEOCVCNSVEOCVBRiVEOCVCMS0lRDklODUlRDklODYtJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUI5JUQ4JUFGJUQ4JUE5P2FtcA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T14:22:05Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"الحرة","title":"بعدما تحدين \"حظر العباءة\".. إعادة عشرات التلميذات إلى منازلهن بفرنسا - الحرة","description":null,"url":"https://news.google.com/rss/articles/CBMi_AJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyMy8wOS8wNS8lRDglQTglRDglQjklRDglQUYlRDklODUlRDglQTctJUQ4JUFBJUQ4JUFEJUQ4JUFGJUQ5JThBJUQ5JTg2LSVEOCVBRCVEOCVCOCVEOCVCMS0lRDglQTclRDklODQlRDglQjklRDglQTglRDglQTclRDglQTElRDglQTktJUQ4JUE1JUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOCVCOSVEOCVCNCVEOCVCMSVEOCVBNyVEOCVBQS0lRDglQTclRDklODQlRDglQUElRDklODQlRDklODUlRDklOEElRDglQjAlRDglQTclRDglQUEtJUQ5JTg1JUQ5JTg2JUQ4JUE3JUQ4JUIyJUQ5JTg0JUQ5JTg3JUQ5JTg2LSVEOCVBOCVEOSU4MSVEOCVCMSVEOSU4NiVEOCVCMyVEOCVBN9IBgANodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyMy8wOS8wNS8lRDglQTglRDglQjklRDglQUYlRDklODUlRDglQTctJUQ4JUFBJUQ4JUFEJUQ4JUFGJUQ5JThBJUQ5JTg2LSVEOCVBRCVEOCVCOCVEOCVCMS0lRDglQTclRDklODQlRDglQjklRDglQTglRDglQTclRDglQTElRDglQTktJUQ4JUE1JUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOCVCOSVEOCVCNCVEOCVCMSVEOCVBNyVEOCVBQS0lRDglQTclRDklODQlRDglQUElRDklODQlRDklODUlRDklOEElRDglQjAlRDglQTclRDglQUEtJUQ5JTg1JUQ5JTg2JUQ4JUE3JUQ4JUIyJUQ5JTg0JUQ5JTg3JUQ5JTg2LSVEOCVBOCVEOSU4MSVEOCVCMSVEOSU4NiVEOCVCMyVEOCVBNz9hbXA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T14:09:49Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"مصر النهاردة","title":"iPhone 15 يثير ضجة...آبل تطلق النسخة الأكثر تطورًا من هاتف آيفون.. تعرّف على تصميم آيفون 15 برو ماكس الجديد - مصر النهاردة","description":null,"url":"https://news.google.com/rss/articles/CBMiL2h0dHBzOi8vYXIubWlzcmR5LmNvbS8yMDIzLzA5L2lwaG9uZS0xNS0xNS5odG1s0gEA?oc=5","urlToImage":null,"publishedAt":"2023-09-05T13:47:45Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"Sky News Arabia سكاي نيوز عربية","title":"السعودية تقود برنت فوق 90 دولارا لأعلى مستوى منذ نوفمبر 2022 - Sky News Arabia سكاي نيوز عربية","description":null,"url":"https://news.google.com/rss/articles/CBMipwJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9idXNpbmVzcy8xNjUwNjM5LSVEOCVBNyVEOSU4NCVEOCVCMyVEOCVCOSVEOSU4OCVEOCVBRiVEOSU4QSVEOCVBOS0lRDglQUElRDklODIlRDklODglRDglQUYtJUQ4JUE4JUQ4JUIxJUQ5JTg2JUQ4JUFBLTkwLSVEOCVBRiVEOSU4OCVEOSU4NCVEOCVBNyVEOCVCMSVEOCVBNy0lRDklODQlRDglQTclRDklOTQlRDglQjklRDklODQlRDklODktJUQ5JTg1JUQ4JUIzJUQ4JUFBJUQ5JTg4JUQ5JTg5LSVEOSU4NiVEOSU4OCVEOSU4MSVEOSU4NSVEOCVBOCVEOCVCMS0yMDIy0gGrAmh0dHBzOi8vd3d3LnNreW5ld3NhcmFiaWEuY29tL2FtcC9idXNpbmVzcy8xNjUwNjM5LSVEOCVBNyVEOSU4NCVEOCVCMyVEOCVCOSVEOSU4OCVEOCVBRiVEOSU4QSVEOCVBOS0lRDglQUElRDklODIlRDklODglRDglQUYtJUQ4JUE4JUQ4JUIxJUQ5JTg2JUQ4JUFBLTkwLSVEOCVBRiVEOSU4OCVEOSU4NCVEOCVBNyVEOCVCMSVEOCVBNy0lRDklODQlRDglQTclRDklOTQlRDglQjklRDklODQlRDklODktJUQ5JTg1JUQ4JUIzJUQ4JUFBJUQ5JTg4JUQ5JTg5LSVEOSU4NiVEOSU4OCVEOSU4MSVEOSU4NSVEOCVBOCVEOCVCMS0yMDIy?oc=5","urlToImage":null,"publishedAt":"2023-09-05T13:36:47Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"CNN Arabic","title":"أردوغان: بوتين وضع طلبين ليوافق على تمديد صفقة الحبوب..ما هما؟ - CNN Arabic","description":null,"url":"https://news.google.com/rss/articles/CBMiZmh0dHBzOi8vYXJhYmljLmNubi5jb20vd29ybGQvYXJ0aWNsZS8yMDIzLzA5LzA1L3J1c3NpYS1zcGVjaWZpYy1yZXF1ZXN0cy1ncmFpbi1kZWFscy1leHRlbnNpb24tZXJkb2dhbtIBbmh0dHBzOi8vYXJhYmljLmNubi5jb20vYW1waHRtbC93b3JsZC9hcnRpY2xlLzIwMjMvMDkvMDUvcnVzc2lhLXNwZWNpZmljLXJlcXVlc3RzLWdyYWluLWRlYWxzLWV4dGVuc2lvbi1lcmRvZ2Fu?oc=5","urlToImage":null,"publishedAt":"2023-09-05T12:47:50Z","content":null},{"source":{"id":"google-news","name":"Google News"},"author":"Sky News Arabia سكاي نيوز عربية","title":"لوموند: فرنسا بدأت محادثات لسحب قواتها من النيجر - Sky News Arabia سكاي نيوز عربية","description":null,"url":"https://news.google.com/rss/articles/CBMinAJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS93b3JsZC8xNjUwNjA1LSVEOSU4NCVEOSU4OCVEOSU4NSVEOSU4OCVEOSU4NiVEOCVBRi0lRDklODElRDglQjElRDklODYlRDglQjMlRDglQTctJUQ4JUE4JUQ4JUFGJUQ4JUE3JUQ5JTk0JUQ4JUFBLSVEOSU4NSVEOCVBRCVEOCVBNyVEOCVBRiVEOCVBQiVEOCVBNyVEOCVBQS0lRDklODQlRDglQjMlRDglQUQlRDglQTgtJUQ5JTgyJUQ5JTg4JUQ4JUE3JUQ4JUFBJUQ5JTg3JUQ4JUE3LSVEOCVBNyVEOSU4NCVEOSU4NiVEOSU4QSVEOCVBQyVEOCVCMdIBoAJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9hbXAvd29ybGQvMTY1MDYwNS0lRDklODQlRDklODglRDklODUlRDklODglRDklODYlRDglQUYtJUQ5JTgxJUQ4JUIxJUQ5JTg2JUQ4JUIzJUQ4JUE3LSVEOCVBOCVEOCVBRiVEOCVBNyVEOSU5NCVEOCVBQS0lRDklODUlRDglQUQlRDglQTclRDglQUYlRDglQUIlRDglQTclRDglQUEtJUQ5JTg0JUQ4JUIzJUQ4JUFEJUQ4JUE4LSVEOSU4MiVEOSU4OCVEOCVBNyVEOCVBQSVEOSU4NyVEOCVBNy0lRDglQTclRDklODQlRDklODYlRDklOEElRDglQUMlRDglQjE?oc=5","urlToImage":null,"publishedAt":"2023-09-05T12:15:16Z","content":null}]}
+{
+  "status": "ok",
+  "totalResults": 34,
+  "articles": [
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "العربية",
+      "title": "ابنة رجاء الجداوي تكشف سراً عن والدتها.. ما هو؟ - العربية",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMimwJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2N1bHR1cmUtYW5kLWFydC8yMDIzLzA5LzA2LyVEOCVBNyVEOCVBOCVEOSU4NiVEOCVBOS0lRDglQjElRDglQUMlRDglQTclRDglQTEtJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ4JUFGJUQ4JUE3JUQ5JTg4JUQ5JThBLSVEOCVBQSVEOSU4MyVEOCVCNCVEOSU4MS0lRDglQjMlRDglQjElRDglQTclRDklOEItJUQ4JUI5JUQ5JTg2LSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBRiVEOCVBQSVEOSU4NyVEOCVBNy0lRDklODUlRDglQTctJUQ5JTg3JUQ5JTg4JUQ4JTlG0gGfAmh0dHBzOi8vd3d3LmFsYXJhYml5YS5uZXQvYW1wL2N1bHR1cmUtYW5kLWFydC8yMDIzLzA5LzA2LyVEOCVBNyVEOCVBOCVEOSU4NiVEOCVBOS0lRDglQjElRDglQUMlRDglQTclRDglQTEtJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ4JUFGJUQ4JUE3JUQ5JTg4JUQ5JThBLSVEOCVBQSVEOSU4MyVEOCVCNCVEOSU4MS0lRDglQjMlRDglQjElRDglQTclRDklOEItJUQ4JUI5JUQ5JTg2LSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBRiVEOCVBQSVEOSU4NyVEOCVBNy0lRDklODUlRDglQTctJUQ5JTg3JUQ5JTg4JUQ4JTlG?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T20:31:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "Al Masry Al Youm - المصري اليوم",
+      "title": "علياء بسيوني تحضر حفل أحمد سعد بـ«بور سعيد» بعد انفصالهما - Al Masry Al Youm - المصري اليوم",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8yOTc0NzUy0gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T19:19:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "أريبيان بزنس",
+      "title": "تعين أول امرأة لتدريب المنتخب الإسباني للسيدات - أريبيان بزنس",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi3AFodHRwczovL2FyYWJpYy5hcmFiaWFuYnVzaW5lc3MuY29tL2FibmV3cy8lRDglQTMlRDklODglRDklODQtJUQ4JUE3JUQ5JTg1JUQ4JUIxJUQ4JUEzJUQ4JUE5LSVEOSU4NCVEOCVBQSVEOCVBRiVEOCVCMSVEOSU4QSVEOCVBOC0lRDglQTclRDklODQlRDglQTUlRDglQjMlRDglQTglRDglQTclRDklODYlRDklOEEtJUQ5JTg0JUQ5JTg0JUQ4JUIzJUQ5JThBJUQ4JUFGJUQ4JUE3JUQ4JUFB0gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T18:50:34Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "Al Masry Al Youm - المصري اليوم",
+      "title": "هبوط عالمي جديد.. سعر الذهب اليوم الثلاثاء 5 سبتمبر 2023 (عيار 21 الآن بختام التعاملات) - Al Masry Al Youm - المصري اليوم",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8yOTc0Njk10gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T18:39:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "الحرة",
+      "title": "البيت الأبيض: كوريا الشمالية \"ستدفع الثمن\" إذا زودت روسيا بأسلحة - الحرة",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi_QJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyMy8wOS8wNS8lRDglQTclRDklODQlRDglQTglRDklOEElRDglQUEtJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ4JUE4JUQ5JThBJUQ4JUI2LSVEOSU4MyVEOSU4OCVEOCVCMSVEOSU4QSVEOCVBNy0lRDglQTclRDklODQlRDglQjQlRDklODUlRDglQTclRDklODQlRDklOEElRDglQTktJUQ4JUIzJUQ4JUFBJUQ4JUFGJUQ5JTgxJUQ4JUI5LSVEOCVBNyVEOSU4NCVEOCVBQiVEOSU4NSVEOSU4Ni0lRDglQTUlRDglQjAlRDglQTctJUQ4JUIyJUQ5JTg4JUQ4JUFGJUQ4JUFBLSVEOCVCMSVEOSU4OCVEOCVCMyVEOSU4QSVEOCVBNy0lRDglQTglRDglQTMlRDglQjMlRDklODQlRDglQUQlRDglQTnSAYEDaHR0cHM6Ly93d3cuYWxodXJyYS5jb20vYXJhYmljLWFuZC1pbnRlcm5hdGlvbmFsLzIwMjMvMDkvMDUvJUQ4JUE3JUQ5JTg0JUQ4JUE4JUQ5JThBJUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBMyVEOCVBOCVEOSU4QSVEOCVCNi0lRDklODMlRDklODglRDglQjElRDklOEElRDglQTctJUQ4JUE3JUQ5JTg0JUQ4JUI0JUQ5JTg1JUQ4JUE3JUQ5JTg0JUQ5JThBJUQ4JUE5LSVEOCVCMyVEOCVBQSVEOCVBRiVEOSU4MSVEOCVCOS0lRDglQTclRDklODQlRDglQUIlRDklODUlRDklODYtJUQ4JUE1JUQ4JUIwJUQ4JUE3LSVEOCVCMiVEOSU4OCVEOCVBRiVEOCVBQS0lRDglQjElRDklODglRDglQjMlRDklOEElRDglQTctJUQ4JUE4JUQ4JUEzJUQ4JUIzJUQ5JTg0JUQ4JUFEJUQ4JUE5P2FtcA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T18:21:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "بوابة النيل الإخباري",
+      "title": "مواصفات وعيوب ايفون iPhone 15 Pro Max وسعره في السعودية ومصر والامارات - بوابة النيل الإخباري",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi5QFodHRwczovL25ld3N5Lm5pbGU0LmNvbS8zNjc0NDkvJUQ5JTg1JUQ5JTg4JUQ4JUE3JUQ4JUI1JUQ5JTgxJUQ4JUE3JUQ4JUFBLSVEOSU4OCVEOCVCOSVEOSU4QSVEOSU4OCVEOCVBOC0lRDglQTclRDklOEElRDklODElRDklODglRDklODYtaXBob25lLTE1LXByby1tYXgtJUQ5JTg4JUQ4JUIzJUQ4JUI5JUQ4JUIxJUQ5JTg3LSVEOSU4MSVEOSU4QS0lRDglQTclRDklODQlRDglQjMlRDglQjklRDklODgv0gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T18:03:44Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "Btolat",
+      "title": "ذا صن: انقسام في ليفربول بشأن عرض اتحاد جدة لضم محمد صلاح - Btolat",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiImh0dHBzOi8vd3d3LmJ0b2xhdC5jb20vbmV3cy8zMjQ5NTXSASlodHRwczovL21vYmlsZS5idG9sYXQuY29tL2FtcC9uZXdzLzMyNDk1NQ?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T18:03:44Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "صحيفة الشرق الأوسط",
+      "title": "مصر: أول رحلة جوية مباشرة إلى بورتسودان - صحيفة الشرق الأوسط",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi7wJodHRwczovL2Fhd3NhdC5jb20vJUQ4JUE3JUQ5JTg0JUQ4JUI5JUQ4JUE3JUQ5JTg0JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVCOSVEOCVCMSVEOCVBOCVEOSU4QS8lRDglQjQlRDklODUlRDglQTclRDklODQtJUQ4JUE3JUQ5JTgxJUQ4JUIxJUQ5JThBJUQ5JTgyJUQ5JThBJUQ4JUE3LzQ1Mjg4NzYtJUQ5JTg1JUQ4JUI1JUQ4JUIxLSVEOCVBMyVEOSU4OCVEOSU4NC0lRDglQjElRDglQUQlRDklODQlRDglQTktJUQ4JUFDJUQ5JTg4JUQ5JThBJUQ4JUE5LSVEOSU4NSVEOCVBOCVEOCVBNyVEOCVCNCVEOCVCMSVEOCVBOS0lRDglQTUlRDklODQlRDklODktJUQ4JUE4JUQ5JTg4JUQ4JUIxJUQ4JUFBJUQ4JUIzJUQ5JTg4JUQ4JUFGJUQ4JUE3JUQ5JTg20gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T18:00:56Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "اليوم السابع",
+      "title": "رنجة على الهواء.. أكلة جمعت صاحبة السعادة وماجد الكدوانى (فيديو) - اليوم السابع",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi6AJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy85LzUvJUQ4JUIxJUQ5JTg2JUQ4JUFDJUQ4JUE5LSVEOCVCOSVEOSU4NCVEOSU4OS0lRDglQTclRDklODQlRDklODclRDklODglRDglQTclRDglQTEtJUQ4JUEzJUQ5JTgzJUQ5JTg0JUQ4JUE5LSVEOCVBQyVEOSU4NSVEOCVCOSVEOCVBQS0lRDglQjUlRDglQTclRDglQUQlRDglQTglRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUIzJUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOSU4OCVEOSU4NSVEOCVBNyVEOCVBQyVEOCVBRi0lRDglQTclRDklODQlRDklODMlRDglQUYlRDklODglRDglQTclRDklODYlRDklODktJUQ5JTgxJUQ5JThBJUQ4JUFGJUQ5JThBJUQ5JTg4LzYyOTUxOTHSAeQCaHR0cHM6Ly9tLnlvdW03LmNvbS9hbXAvMjAyMy85LzUvJUQ4JUIxJUQ5JTg2JUQ4JUFDJUQ4JUE5LSVEOCVCOSVEOSU4NCVEOSU4OS0lRDglQTclRDklODQlRDklODclRDklODglRDglQTclRDglQTEtJUQ4JUEzJUQ5JTgzJUQ5JTg0JUQ4JUE5LSVEOCVBQyVEOSU4NSVEOCVCOSVEOCVBQS0lRDglQjUlRDglQTclRDglQUQlRDglQTglRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUIzJUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOSU4OCVEOSU4NSVEOCVBNyVEOCVBQyVEOCVBRi0lRDglQTclRDklODQlRDklODMlRDglQUYlRDklODglRDglQTclRDklODYlRDklODktJUQ5JTgxJUQ5JThBJUQ4JUFGJUQ5JThBJUQ5JTg4LzYyOTUxOTE?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T17:13:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "اليوم السابع",
+      "title": "جدول مباريات كأس العالم للأندية 2023.. الأهلى ينتظر الاتحاد \"إنفوجراف\" - اليوم السابع",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi-AJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy85LzUvJUQ4JUFDJUQ4JUFGJUQ5JTg4JUQ5JTg0LSVEOSU4NSVEOCVBOCVEOCVBNyVEOCVCMSVEOSU4QSVEOCVBNyVEOCVBQS0lRDklODMlRDglQTMlRDglQjMtJUQ4JUE3JUQ5JTg0JUQ4JUI5JUQ4JUE3JUQ5JTg0JUQ5JTg1LSVEOSU4NCVEOSU4NCVEOCVBMyVEOSU4NiVEOCVBRiVEOSU4QSVEOCVBOS0yMDIzLSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NyVEOSU4NCVEOSU4OS0lRDklOEElRDklODYlRDglQUElRDglQjglRDglQjEtJUQ4JUE3JUQ5JTg0JUQ4JUE3JUQ4JUFBJUQ4JUFEJUQ4JUE3JUQ4JUFGLSVEOCVBNSVEOSU4NiVEOSU4MSVEOSU4OCVEOCVBQyVEOCVCMSVEOCVBNyVEOSU4MS82Mjk1MDg20gH0Amh0dHBzOi8vbS55b3VtNy5jb20vYW1wLzIwMjMvOS81LyVEOCVBQyVEOCVBRiVEOSU4OCVEOSU4NC0lRDklODUlRDglQTglRDglQTclRDglQjElRDklOEElRDglQTclRDglQUEtJUQ5JTgzJUQ4JUEzJUQ4JUIzLSVEOCVBNyVEOSU4NCVEOCVCOSVEOCVBNyVEOSU4NCVEOSU4NS0lRDklODQlRDklODQlRDglQTMlRDklODYlRDglQUYlRDklOEElRDglQTktMjAyMy0lRDglQTclRDklODQlRDglQTMlRDklODclRDklODQlRDklODktJUQ5JThBJUQ5JTg2JUQ4JUFBJUQ4JUI4JUQ4JUIxLSVEOCVBNyVEOSU4NCVEOCVBNyVEOCVBQSVEOCVBRCVEOCVBNyVEOCVBRi0lRDglQTUlRDklODYlRDklODElRDklODglRDglQUMlRDglQjElRDglQTclRDklODEvNjI5NTA4Ng?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T17:11:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "كورة بلس",
+      "title": "أهداف مباراة الأهلي الودية أمام NK Aluminiji في معسكر النمسا - كورة بلس",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMipwJodHRwczovL2tvcmFwbHVzLmNvbS9BcnRpY2xlLzk3MjY0LyVEOCVBMyVEOSU4NyVEOCVBRiVEOCVBNyVEOSU4MS0lRDklODUlRDglQTglRDglQTclRDglQjElRDglQTclRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ5JTg3JUQ5JTg0JUQ5JThBLSVEOCVBNyVEOSU4NCVEOSU4OCVEOCVBRiVEOSU4QSVEOCVBOS0lRDglQTMlRDklODUlRDglQTclRDklODUtTkstQWx1bWluaWppLSVEOSU4MSVEOSU4QS0lRDklODUlRDglQjklRDglQjMlRDklODMlRDglQjEtJUQ4JUE3JUQ5JTg0JUQ5JTg2JUQ5JTg1JUQ4JUIzJUQ4JUE30gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T16:14:43Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "مصر النهاردة",
+      "title": "عشاق إي فوتبول بيس.. تعرف على الإصدار الجديد 2024 وكيفية تحديث اللعبة 2024 eFootball pes mobile - مصر النهاردة",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiQWh0dHBzOi8vYXIubWlzcmR5LmNvbS8yMDIzLzA5LzIwMjQtMjAyNC1lZm9vdGJhbGwtcGVzLW1vYmlsZS5odG1s0gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T16:10:28Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "العربية",
+      "title": "5 أطعمة تفيد صحة الدماغ وتحسن الحالة المزاجية - العربية",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMioAJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L21lZGljaW5lLWFuZC1oZWFsdGgvMjAyMy8wOS8wNS81LSVEOCVBMyVEOCVCNyVEOCVCOSVEOSU4NSVEOCVBOS0lRDglQUElRDklODElRDklOEElRDglQUYtJUQ4JUI1JUQ4JUFEJUQ4JUE5LSVEOCVBNyVEOSU4NCVEOCVBRiVEOSU4NSVEOCVBNyVEOCVCQS0lRDklODglRDglQUElRDglQUQlRDglQjMlRDklODYtJUQ4JUE3JUQ5JTg0JUQ4JUFEJUQ4JUE3JUQ5JTg0JUQ4JUE5LSVEOCVBNyVEOSU4NCVEOSU4NSVEOCVCMiVEOCVBNyVEOCVBQyVEOSU4QSVEOCVBOS3SAaQCaHR0cHM6Ly93d3cuYWxhcmFiaXlhLm5ldC9hbXAvbWVkaWNpbmUtYW5kLWhlYWx0aC8yMDIzLzA5LzA1LzUtJUQ4JUEzJUQ4JUI3JUQ4JUI5JUQ5JTg1JUQ4JUE5LSVEOCVBQSVEOSU4MSVEOSU4QSVEOCVBRi0lRDglQjUlRDglQUQlRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ5JTg1JUQ4JUE3JUQ4JUJBLSVEOSU4OCVEOCVBQSVEOCVBRCVEOCVCMyVEOSU4Ni0lRDglQTclRDklODQlRDglQUQlRDglQTclRDklODQlRDglQTktJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUIyJUQ4JUE3JUQ4JUFDJUQ5JThBJUQ4JUE5LQ?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T15:56:31Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "اليوم السابع",
+      "title": "أخبار مصر.. ارتفاع درجات الحرارة غداً بأغلب الأنحاء والعظمى بالقاهرة 37 درجة - اليوم السابع",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMijANodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy85LzUvJUQ4JUEzJUQ4JUFFJUQ4JUE4JUQ4JUE3JUQ4JUIxLSVEOSU4NSVEOCVCNSVEOCVCMS0lRDglQTclRDglQjElRDglQUElRDklODElRDglQTclRDglQjktJUQ4JUFGJUQ4JUIxJUQ4JUFDJUQ4JUE3JUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBRCVEOCVCMSVEOCVBNyVEOCVCMSVEOCVBOS0lRDglQkElRDglQUYlRDglQTclRDklOEItJUQ4JUE4JUQ4JUEzJUQ4JUJBJUQ5JTg0JUQ4JUE4LSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NiVEOCVBRCVEOCVBNyVEOCVBMS0lRDklODglRDglQTclRDklODQlRDglQjklRDglQjglRDklODUlRDklODktJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ5JTgyJUQ4JUE3JUQ5JTg3JUQ4JUIxJUQ4JUE5LzYyOTUwNjDSAYgDaHR0cHM6Ly9tLnlvdW03LmNvbS9hbXAvMjAyMy85LzUvJUQ4JUEzJUQ4JUFFJUQ4JUE4JUQ4JUE3JUQ4JUIxLSVEOSU4NSVEOCVCNSVEOCVCMS0lRDglQTclRDglQjElRDglQUElRDklODElRDglQTclRDglQjktJUQ4JUFGJUQ4JUIxJUQ4JUFDJUQ4JUE3JUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBRCVEOCVCMSVEOCVBNyVEOCVCMSVEOCVBOS0lRDglQkElRDglQUYlRDglQTclRDklOEItJUQ4JUE4JUQ4JUEzJUQ4JUJBJUQ5JTg0JUQ4JUE4LSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NiVEOCVBRCVEOCVBNyVEOCVBMS0lRDklODglRDglQTclRDklODQlRDglQjklRDglQjglRDklODUlRDklODktJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ5JTgyJUQ4JUE3JUQ5JTg3JUQ4JUIxJUQ4JUE5LzYyOTUwNjA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T15:00:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "الكونسلتو",
+      "title": "أعراض ارتفاع الكوليسترول- 7 علامات تصدر من المعدة - الكونسلتو",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiwQJodHRwczovL3d3dy5lbGNvbnNvbHRvLmNvbS9jaHJvbmljL2Nocm9uaWMtbmV3cy9kZXRhaWxzLzIwMjMvOS81LzI0NjM5NjAvJUQ4JUEzJUQ4JUI5JUQ4JUIxJUQ4JUE3JUQ4JUI2LSVEOCVBNyVEOCVCMSVEOCVBQSVEOSU4MSVEOCVBNyVEOCVCOS0lRDglQTclRDklODQlRDklODMlRDklODglRDklODQlRDklOEElRDglQjMlRDglQUElRDglQjElRDklODglRDklODQtNy0lRDglQjklRDklODQlRDglQTclRDklODUlRDglQTclRDglQUEtJUQ4JUFBJUQ4JUI1JUQ4JUFGJUQ4JUIxLSVEOSU4NSVEOSU4Ni0lRDglQTclRDklODQlRDklODUlRDglQjklRDglQUYlRDglQTnSAcUCaHR0cHM6Ly93d3cuZWxjb25zb2x0by5jb20vY2hyb25pYy9jaHJvbmljLW5ld3MvZGV0YWlscy8yMDIzLzkvNS8yNDYzOTYwLyVEOCVBMyVEOCVCOSVEOCVCMSVEOCVBNyVEOCVCNi0lRDglQTclRDglQjElRDglQUElRDklODElRDglQTclRDglQjktJUQ4JUE3JUQ5JTg0JUQ5JTgzJUQ5JTg4JUQ5JTg0JUQ5JThBJUQ4JUIzJUQ4JUFBJUQ4JUIxJUQ5JTg4JUQ5JTg0LTctJUQ4JUI5JUQ5JTg0JUQ4JUE3JUQ5JTg1JUQ4JUE3JUQ4JUFBLSVEOCVBQSVEOCVCNSVEOCVBRiVEOCVCMS0lRDklODUlRDklODYtJUQ4JUE3JUQ5JTg0JUQ5JTg1JUQ4JUI5JUQ4JUFGJUQ4JUE5P2FtcA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T14:22:05Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "الحرة",
+      "title": "بعدما تحدين \"حظر العباءة\".. إعادة عشرات التلميذات إلى منازلهن بفرنسا - الحرة",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi_AJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyMy8wOS8wNS8lRDglQTglRDglQjklRDglQUYlRDklODUlRDglQTctJUQ4JUFBJUQ4JUFEJUQ4JUFGJUQ5JThBJUQ5JTg2LSVEOCVBRCVEOCVCOCVEOCVCMS0lRDglQTclRDklODQlRDglQjklRDglQTglRDglQTclRDglQTElRDglQTktJUQ4JUE1JUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOCVCOSVEOCVCNCVEOCVCMSVEOCVBNyVEOCVBQS0lRDglQTclRDklODQlRDglQUElRDklODQlRDklODUlRDklOEElRDglQjAlRDglQTclRDglQUEtJUQ5JTg1JUQ5JTg2JUQ4JUE3JUQ4JUIyJUQ5JTg0JUQ5JTg3JUQ5JTg2LSVEOCVBOCVEOSU4MSVEOCVCMSVEOSU4NiVEOCVCMyVEOCVBN9IBgANodHRwczovL3d3dy5hbGh1cnJhLmNvbS9hcmFiaWMtYW5kLWludGVybmF0aW9uYWwvMjAyMy8wOS8wNS8lRDglQTglRDglQjklRDglQUYlRDklODUlRDglQTctJUQ4JUFBJUQ4JUFEJUQ4JUFGJUQ5JThBJUQ5JTg2LSVEOCVBRCVEOCVCOCVEOCVCMS0lRDglQTclRDklODQlRDglQjklRDglQTglRDglQTclRDglQTElRDglQTktJUQ4JUE1JUQ4JUI5JUQ4JUE3JUQ4JUFGJUQ4JUE5LSVEOCVCOSVEOCVCNCVEOCVCMSVEOCVBNyVEOCVBQS0lRDglQTclRDklODQlRDglQUElRDklODQlRDklODUlRDklOEElRDglQjAlRDglQTclRDglQUEtJUQ5JTg1JUQ5JTg2JUQ4JUE3JUQ4JUIyJUQ5JTg0JUQ5JTg3JUQ5JTg2LSVEOCVBOCVEOSU4MSVEOCVCMSVEOSU4NiVEOCVCMyVEOCVBNz9hbXA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T14:09:49Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "مصر النهاردة",
+      "title": "iPhone 15 يثير ضجة...آبل تطلق النسخة الأكثر تطورًا من هاتف آيفون.. تعرّف على تصميم آيفون 15 برو ماكس الجديد - مصر النهاردة",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiL2h0dHBzOi8vYXIubWlzcmR5LmNvbS8yMDIzLzA5L2lwaG9uZS0xNS0xNS5odG1s0gEA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T13:47:45Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "Sky News Arabia سكاي نيوز عربية",
+      "title": "السعودية تقود برنت فوق 90 دولارا لأعلى مستوى منذ نوفمبر 2022 - Sky News Arabia سكاي نيوز عربية",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMipwJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9idXNpbmVzcy8xNjUwNjM5LSVEOCVBNyVEOSU4NCVEOCVCMyVEOCVCOSVEOSU4OCVEOCVBRiVEOSU4QSVEOCVBOS0lRDglQUElRDklODIlRDklODglRDglQUYtJUQ4JUE4JUQ4JUIxJUQ5JTg2JUQ4JUFBLTkwLSVEOCVBRiVEOSU4OCVEOSU4NCVEOCVBNyVEOCVCMSVEOCVBNy0lRDklODQlRDglQTclRDklOTQlRDglQjklRDklODQlRDklODktJUQ5JTg1JUQ4JUIzJUQ4JUFBJUQ5JTg4JUQ5JTg5LSVEOSU4NiVEOSU4OCVEOSU4MSVEOSU4NSVEOCVBOCVEOCVCMS0yMDIy0gGrAmh0dHBzOi8vd3d3LnNreW5ld3NhcmFiaWEuY29tL2FtcC9idXNpbmVzcy8xNjUwNjM5LSVEOCVBNyVEOSU4NCVEOCVCMyVEOCVCOSVEOSU4OCVEOCVBRiVEOSU4QSVEOCVBOS0lRDglQUElRDklODIlRDklODglRDglQUYtJUQ4JUE4JUQ4JUIxJUQ5JTg2JUQ4JUFBLTkwLSVEOCVBRiVEOSU4OCVEOSU4NCVEOCVBNyVEOCVCMSVEOCVBNy0lRDklODQlRDglQTclRDklOTQlRDglQjklRDklODQlRDklODktJUQ5JTg1JUQ4JUIzJUQ4JUFBJUQ5JTg4JUQ5JTg5LSVEOSU4NiVEOSU4OCVEOSU4MSVEOSU4NSVEOCVBOCVEOCVCMS0yMDIy?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T13:36:47Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "CNN Arabic",
+      "title": "أردوغان: بوتين وضع طلبين ليوافق على تمديد صفقة الحبوب..ما هما؟ - CNN Arabic",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiZmh0dHBzOi8vYXJhYmljLmNubi5jb20vd29ybGQvYXJ0aWNsZS8yMDIzLzA5LzA1L3J1c3NpYS1zcGVjaWZpYy1yZXF1ZXN0cy1ncmFpbi1kZWFscy1leHRlbnNpb24tZXJkb2dhbtIBbmh0dHBzOi8vYXJhYmljLmNubi5jb20vYW1waHRtbC93b3JsZC9hcnRpY2xlLzIwMjMvMDkvMDUvcnVzc2lhLXNwZWNpZmljLXJlcXVlc3RzLWdyYWluLWRlYWxzLWV4dGVuc2lvbi1lcmRvZ2Fu?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T12:47:50Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": "Sky News Arabia سكاي نيوز عربية",
+      "title": "لوموند: فرنسا بدأت محادثات لسحب قواتها من النيجر - Sky News Arabia سكاي نيوز عربية",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMinAJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS93b3JsZC8xNjUwNjA1LSVEOSU4NCVEOSU4OCVEOSU4NSVEOSU4OCVEOSU4NiVEOCVBRi0lRDklODElRDglQjElRDklODYlRDglQjMlRDglQTctJUQ4JUE4JUQ4JUFGJUQ4JUE3JUQ5JTk0JUQ4JUFBLSVEOSU4NSVEOCVBRCVEOCVBNyVEOCVBRiVEOCVBQiVEOCVBNyVEOCVBQS0lRDklODQlRDglQjMlRDglQUQlRDglQTgtJUQ5JTgyJUQ5JTg4JUQ4JUE3JUQ4JUFBJUQ5JTg3JUQ4JUE3LSVEOCVBNyVEOSU4NCVEOSU4NiVEOSU4QSVEOCVBQyVEOCVCMdIBoAJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9hbXAvd29ybGQvMTY1MDYwNS0lRDklODQlRDklODglRDklODUlRDklODglRDklODYlRDglQUYtJUQ5JTgxJUQ4JUIxJUQ5JTg2JUQ4JUIzJUQ4JUE3LSVEOCVBOCVEOCVBRiVEOCVBNyVEOSU5NCVEOCVBQS0lRDklODUlRDglQUQlRDglQTclRDglQUYlRDglQUIlRDglQTclRDglQUEtJUQ5JTg0JUQ4JUIzJUQ4JUFEJUQ4JUE4LSVEOSU4MiVEOSU4OCVEOCVBNyVEOCVBQSVEOSU4NyVEOCVBNy0lRDglQTclRDklODQlRDklODYlRDklOEElRDglQUMlRDglQjE?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2023-09-05T12:15:16Z",
+      "content": null
+    }
+  ]
+}
