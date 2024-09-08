@@ -23,37 +23,37 @@ import 'layout/news_app/cubit/cubit.dart';
 import 'layout/news_app/cubit/cubit2.dart';
 import 'modules/social_app/social_login/social_login_screen.dart';
 
-// Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-//   print('onBackgroundMessage');
-//   print(message.data.toString());
-//   itemToast(text: 'onBackgroundMessage', state: ToastStates.success);
-// }
+Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  print('onBackgroundMessage');
+  print(message.data.toString());
+  itemToast(text: 'onBackgroundMessage', state: ToastStates.success);
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
-  //
-  // var tokenApp = await FirebaseMessaging.instance.getToken();
-  // //print(tokenApp);
-  //
-  // FirebaseMessaging.onMessage.listen((event) {
-  //   print('on message');
-  //   print(event.data.toString());
-  //   itemToast(text: 'on message', state: ToastStates.success);
-  // });
-  //
-  // FirebaseMessaging.onMessageOpenedApp.listen((event) {
-  //   print('on message opened');
-  //   print(event.data.toString());
-  //   itemToast(text: 'on message opened', state: ToastStates.success);
-  // });
-  //
-  // FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-  //
-  // NotificationsHelper.getAccessToken();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  var tokenApp = await FirebaseMessaging.instance.getToken();
+  //print(tokenApp);
+
+  FirebaseMessaging.onMessage.listen((event) {
+    print('on message');
+    print(event.data.toString());
+    itemToast(text: 'on message', state: ToastStates.success);
+  });
+
+  FirebaseMessaging.onMessageOpenedApp.listen((event) {
+    print('on message opened');
+    print(event.data.toString());
+    itemToast(text: 'on message opened', state: ToastStates.success);
+  });
+
+  FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+
+  NotificationsHelper.getAccessToken();
 
   // if (Platform.isWindows) {
   //   WindowManager.instance.setMinimumSize(const Size(600, 400));
@@ -138,7 +138,7 @@ class MyApp extends StatelessWidget {
             themeMode: DarkCubit.get(context).isDark
                 ? ThemeMode.dark
                 : ThemeMode.light,
-            home: const NewsLayoutScreen(),
+            home: startWidget,
           );
         },
       ),
